@@ -93,13 +93,13 @@
             
             <div class="row mb-4">
               <div class="col-md-4 mb-md-0 mb-4">
-                <input type="text" class="form-control" placeholder="Tu nombre">
+                <input type="text" id="txtNombre" class="form-control" placeholder="Tu nombre">
               </div>
               <div class="col-md-4 mb-md-0 mb-4">
-                <input type="text" class="form-control" placeholder="Dirección de E-mail">
+                <input type="text" id="txtEmail" class="form-control" placeholder="Dirección de E-mail">
               </div>
               <div class="col-md-4 mb-md-0 mb-4">
-                <input type="text" class="form-control" placeholder="Teléfono">
+                <input type="text" id="txtTel" class="form-control" placeholder="Teléfono">
               </div>
             </div>
             <div class="row mb-4">
@@ -187,6 +187,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/main.js"></script>
+	<script src="js/smtp.js"></script>
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
@@ -207,11 +208,33 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             });
 			
 			function sendMail() {
-				var link = "mailto:andres.perez125@gmail.com"
-				 + "?cc=andres.perez125@gmail.com"
-				 + "&subject=" + escape("This is my subject")
-				 + "&body=" + escape(document.getElementById('texMensaje').value);
-				 window.location.href = link;
+			var nombre = document.getElementById("txtNombre").value;
+			var correo = document.getElementById("txtEmail").value;
+			var tel = document.getElementById("txtTel").value;
+			var mensaje = document.getElementById("texMensaje").value;
+			var asunto = '***Importante***';
+			var contenidoMensaje = 'Nombre: ' + nombre + ' | ' + 'Correo: ' + correo + ' | ' + 'Tel: ' + tel + ' | ' + 'Mensaje: ' + mensaje;
+			var de = 'andres.perez125@gmail.com';
+			var para = 'andres.perez125@gmail.com';
+			var userName = 'andres.perez125@gmail.com';
+			
+			Email.send(de,
+			para,
+			asunto,
+			contenidoMensaje,
+			"smtp.elasticemail.com",
+			userName,
+			"de999b81-5a76-4071-a3a8-0ebc96e31822");
+
+			/* Estructura Objeto Email			
+			Email.send("from@you.com",
+			"to@them.com",
+			"This is a subject",
+			"this is the body",
+			"smtp.yourisp.com",
+			"username",
+			"password");*/
+
 }
     </script>
   </body>
