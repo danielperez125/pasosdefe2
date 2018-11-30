@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Advent Church Website Template</title>
+    <title>Pasos de Fe.</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -78,12 +78,13 @@
     </section>
     <!-- END slider -->
 
-    <section class="section">
-      <div class="container">
+	<!-- Seccion encabezado eventos -->
+	<section class="section">
+	<div class="container">
         <div class="row mb-5 justify-content-center element-animate">
           <div class="col-md-12">
-            <span class="section-heading">Ministries</span>
-            <h2>Events &amp; Ministries</h2>
+            <span class="section-heading">Eventos</span>
+            <h2>Eventos &amp; Ministerios</h2>
           </div>
         </div>
         <div class="row">
@@ -91,9 +92,9 @@
             <div class="media custom-media">
               <img class="mr-3" width="30" src="img/img_1.jpg" alt="Generic placeholder image">
               <div class="media-body">
-                <h3 class="mt-0"><a href="#">Prayer &amp; Devotional for Children</a></h3>
-                <p class="post-meta">May 12, 2018, <a href="#">Children Ministries</a></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed obcaecati, totam recusandae iure non nemo.</p>
+                <h3 class="mt-0"><a style="cursor: pointer;color: #cf9f0d;" onclick="MostrarOcultar('dvCalera')" >Parejas &amp; Paseo a la Calera</a></h3>
+                <p class="post-meta">Junio 18, 2018, <a href="#">Ministerio de Varones</a></p>
+                <p>Más cerca de Dios con nuestras parejas.</p>
               </div>
             </div>
           </div>
@@ -101,9 +102,9 @@
             <div class="media custom-media">
               <img class="mr-3" width="30" src="img/img_2.jpg" alt="Generic placeholder image">
               <div class="media-body">
-                <h3 class="mt-0"><a href="#">We Must Walk In The Middle of The Road</a></h3>
-                <p class="post-meta">May 12, 2018, <a href="#">Missions</a></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed obcaecati, totam recusandae iure non nemo.</p>
+                <h3 class="mt-0"><a style="cursor: pointer;color: #cf9f0d;" onclick="MostrarOcultar('dvCenaR')">Parejas &amp; Cena Romántica</a></h3>
+                <p class="post-meta">Agosto 18, 2018, <a href="#">Ministerio de Damas</a></p>
+                <p>Reavivando el amor con una cena especial.</p>
               </div>
             </div>
           </div>
@@ -111,57 +112,129 @@
             <div class="media custom-media">
               <img class="mr-3" width="30" src="img/img_3.jpg" alt="Generic placeholder image">
               <div class="media-body">
-                <h3 class="mt-0"><a href="#">Tracts Giving</a></h3>
-                <p class="post-meta">May 12, 2018, <a href="#">Care Ministry</a></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed obcaecati, totam recusandae iure non nemo.</p>
+                <h3 class="mt-0"><a style="cursor: pointer;color: #cf9f0d;" onclick="MostrarOcultar('dvEncuentroDamas')">Damas &amp; Encuentro de Damas</a></h3>
+                <p class="post-meta">Noviembre 18, 2018, <a href="#">Ministerio de Damas</a></p>
+                <p>Encuentro de damas, estableciendo intimidad con Dios.</p>
               </div>
             </div>
           </div>
 
         </div>
-
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4 element-animate">
-            <div class="media custom-media">
-              <img class="mr-3" width="30" src="img/img_1.jpg" alt="Generic placeholder image">
-              <div class="media-body">
-                <h3 class="mt-0"><a href="#">Prayer &amp; Devotional for Children</a></h3>
-                <p class="post-meta">May 12, 2018, <a href="#">Children Ministries</a></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed obcaecati, totam recusandae iure non nemo.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 element-animate">
-            <div class="media custom-media">
-              <img class="mr-3" width="30" src="img/img_2.jpg" alt="Generic placeholder image">
-              <div class="media-body">
-                <h3 class="mt-0"><a href="#">We Must Walk In The Middle of The Road</a></h3>
-                <p class="post-meta">May 12, 2018, <a href="#">Missions</a></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed obcaecati, totam recusandae iure non nemo.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 element-animate">
-            <div class="media custom-media">
-              <img class="mr-3" width="30" src="img/img_3.jpg" alt="Generic placeholder image">
-              <div class="media-body">
-                <h3 class="mt-0"><a href="#">Tracts Giving</a></h3>
-                <p class="post-meta">May 12, 2018, <a href="#">Care Ministry</a></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed obcaecati, totam recusandae iure non nemo.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
+      
       </div>
     </section>
 
+	
+	<!-- Seccion Imágenes -->
+    <section class="section">
+	
+		<div id="dvCalera" class="carousel slide" data-ride="carousel" style="margin-left: 8%;">
+		<span class="section-heading">Salida noviembre 27 2018</span><br/>
+		<h2>Mirador Calera</h2><br/>
+	  <ul class="carousel-indicators">
+		<li data-target="#dvCalera" data-slide-to="0" class="active"></li>
+		<li data-target="#dvCalera" data-slide-to="1"></li>
+		<li data-target="#dvCalera" data-slide-to="2"></li>
+	  </ul>
+	  <div class="carousel-inner">
+		<div class="carousel-item active">
+		  <img src="img/eventos/10.jpg" alt="Los Angeles" width="1100" height="825">
+		  <div class="carousel-caption">
+			<h3>Los Angeles</h3>
+			<p>We had such a great time in LA!</p>
+		  </div>   
+		</div>
+		<div class="carousel-item">
+		  <img src="img/eventos/chicago.jpg" alt="Chicago" width="1100" height="825">
+		  <div class="carousel-caption">
+			<h3>Chicago</h3>
+			<p>Thank you, Chicago!</p>
+		  </div>   
+		</div>
+
+	  </div>
+	  <a class="carousel-control-prev" href="#dvCalera" data-slide="prev">
+		<span class="carousel-control-prev-icon"></span>
+	  </a>
+	  <a class="carousel-control-next" href="#dvCalera" data-slide="next">
+		<span class="carousel-control-next-icon"></span>
+	  </a>
+	</div>
+
+		<div id="dvCenaR" class="carousel slide" data-ride="carousel" style="margin-left: 8%; display:none">
+		<span class="section-heading">Salida noviembre 27 2018</span><br/>
+		<h2>Cenando con Dios</h2><br/>
+	  <ul class="carousel-indicators">
+		<li data-target="#dvCenaR" data-slide-to="0" class="active"></li>
+		<li data-target="#dvCenaR" data-slide-to="1"></li>
+		<li data-target="#dvCenaR" data-slide-to="2"></li>
+	  </ul>
+	  <div class="carousel-inner">
+		<div class="carousel-item active">
+		  <img src="img/eventos/12.jpg" alt="Los Angeles" width="1100" height="825">
+		  <div class="carousel-caption">
+			<h3>Los Angeles</h3>
+			<p>We had such a great time in LA!</p>
+		  </div>   
+		</div>
+		<div class="carousel-item">
+		  <img src="img/eventos/la.jpg" alt="Chicago" width="1100" height="825">
+		  <div class="carousel-caption">
+			<h3>Chicago</h3>
+			<p>Thank you, Chicago!</p>
+		  </div>   
+		</div>
+	  </div>
+	  <a class="carousel-control-prev" href="#dvCenaR" data-slide="prev">
+		<span class="carousel-control-prev-icon"></span>
+	  </a>
+	  <a class="carousel-control-next" href="#dvCenaR" data-slide="next">
+		<span class="carousel-control-next-icon"></span>
+	  </a>
+	</div>
+		
+		<div id="dvEncuentroDamas" class="carousel slide" data-ride="carousel" style="margin-left: 8%; display:none">
+
+	<span class="section-heading">Salida noviembre 18 2018</span><br/>
+	<h2>Intimidad con Dios</h2><br/>
+  <ul class="carousel-indicators">
+    <li data-target="#dvEncuentroDamas" data-slide-to="0" class="active"></li>
+    <li data-target="#dvEncuentroDamas" data-slide-to="1"></li>
+    <li data-target="#dvEncuentroDamas" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/eventos/11.jpg" alt="Los Angeles" width="1100" height="825">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>We had such a great time in LA!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="img/eventos/ny.jpg" alt="Chicago" width="1100" height="825">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#dvEncuentroDamas" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#dvEncuentroDamas" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+	
+	</section>
+
+	<!-- Seccion Líderes Eventos -->
     <section class="section">
       <div class="container">
         <div class="row mb-5 justify-content-center element-animate">
           <div class="col-md-12">
-            <span class="section-heading">Officers</span>
-            <h2>Officers For Children Ministries</h2>
+            <span class="section-heading">Líderes</span>
+            <h2>Líderes encargados</h2>
           </div>
         </div>
         <div class="row">
@@ -200,67 +273,10 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="section pt-5 pb-2">
-      <div class="container">
-        <div class="row mb-5 justify-content-center element-animate">
-          <div class="col-md-12">
-            <span class="section-heading">Recent Sermons</span>
-            <h2>Our Latest Sermons</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-sm-6 col-lg-4 mb-5">
-            
-            <div class="sermon element-animate">
-              <div class="sermon-text">
-            <h2><a href="#">Arise, Shine</a></h2>
-            <p class="sermon-meta">by <a href="#">Luis Matthew</a> on March 28, 2018</p>
-            </div>
-            <div class="player">
-                <audio id="player2" preload="none" controls style="max-width: 100%">
-                    <source src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3" type="audio/mp3">
-                </audio>
-            </div>
-            </div>
-
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-5">
-            
-            <div class="sermon element-animate">
-              <div class="sermon-text">
-            <h2><a href="#">Filled in Him</a></h2>
-            <p class="sermon-meta">by <a href="#">Luis Matthew</a> on March 28, 2018</p>
-            </div>
-            <div class="player">
-                <audio id="player3" preload="none" controls style="max-width: 100%">
-                    <source src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3" type="audio/mp3">
-                </audio>
-            </div>
-            </div>
-
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-5">
-            
-            <div class="sermon element-animate">
-              <div class="sermon-text">
-            <h2><a href="#">Jehovah the Creator</a></h2>
-            <p class="sermon-meta">by <a href="#">Luis Matthew</a> on March 28, 2018</p>
-            </div>
-            <div class="player">
-                <audio id="player4" preload="none" controls style="max-width: 100%">
-                    <source src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3" type="audio/mp3">
-                </audio>
-            </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- END section -->
+	</section>
+	
+	
+	<!-- END section -->
     
     
 
@@ -268,33 +284,35 @@
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-4 mb-5">
-            <h3>About The Advent</h3>
-            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus et dolor blanditiis consequuntur ex voluptates perspiciatis omnis unde minima expedita.</p>
+            <h3>Misión de Dios en Pasos de Fe</h3>
+            <p class="mb-5">"Y haré de ti una nación grande, y te bendeciré, y engrandeceré tu nombre, y serás bendición.
+							Bendeciré a los que te bendijeren, y a los que te maldijeren maldeciré; y serán benditas en ti 
+							todas las familias de la tierra" Génesis 12:2-3</p>
             <ul class="list-unstyled footer-link d-flex footer-social">
-              <li><a href="#" class="p-2"><span class="fa fa-twitter"></span></a></li>
-              <li><a href="#" class="p-2"><span class="fa fa-facebook"></span></a></li>
-              <li><a href="#" class="p-2"><span class="fa fa-linkedin"></span></a></li>
-              <li><a href="#" class="p-2"><span class="fa fa-instagram"></span></a></li>
+			  <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span class="fa fa-twitter"></span></a></li>
+              <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span class="fa fa-facebook"></span></a></li>
+              <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span class="fa fa-linkedin"></span></a></li>
+              <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span class="fa fa-instagram"></span></a></li>
             </ul>
 
           </div>
           <div class="col-md-3 mb-5">
-            <h3>Quick Links</h3>
+            <h3>Acceso rápido</h3>
             <ul class="list-unstyled footer-link">
-              <li><a href="#">Sermons</a></li>
-              <li><a href="#">Ministries</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#">Predicaciones</a></li>
+              <li><a href="#">Ministerios</a></li>
+              <li><a href="#">Eventos</a></li>
+              <li><a href="#">Contáctenos</a></li>
             </ul>
           </div>
           <div class="col-md-5 mb-5">
-            <h3>Contact Info</h3>
+            <h3>Información de contacto</h3>
             <ul class="list-unstyled footer-link">
               <li class="d-block">
-                <span class="d-block">Address:</span>
-                <span class="text-white">34 Street Name, City Name Here, United States</span></li>
-              <li class="d-block"><span class="d-block">Telephone:</span><span class="text-white">+1 242 4942 290</span></li>
-              <li class="d-block"><span class="d-block">Email:</span><span class="text-white">info@yourdomain.com</span></li>
+                <span class="d-block">Dirección:</span>
+                <span class="text-white">Diagonal 40 Sur, 38-54. Barrio Inglés.</span></li>
+              <li class="d-block"><span class="d-block">Teléfono:</span><span class="text-white">+57 (1)255-8967</span></li>
+              <li class="d-block"><span class="d-block">Email:</span><span class="text-white">iglesiacristianapasosdefe@gmail.com</span></li>
             </ul>
           </div>
           
@@ -339,6 +357,22 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 });
                 }
             });
+			
+			function MostrarOcultar(_elemento){
+				
+				$('#' + _elemento).css('display', 'block');
+			
+				if(_elemento == 'dvCalera'){
+					$('#dvEncuentroDamas').css('display', 'none');
+					$('#dvCenaR').css('display', 'none');
+				} else if(_elemento == 'dvEncuentroDamas'){
+					$('#dvCalera').css('display', 'none');
+					$('#dvCenaR').css('display', 'none');
+				}  else if(_elemento == 'dvCenaR'){
+					$('#dvEncuentroDamas').css('display', 'none');
+					$('#dvCalera').css('display', 'none');
+				}		
+			}
     </script>
   </body>
 </html>

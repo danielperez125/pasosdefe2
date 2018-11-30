@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/StyleAlert.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
 
     <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
@@ -109,7 +110,7 @@
             </div>
             <div class="row">
               <div class="col-md-4">
-                <input type="button" onclick="sendMail()" class="btn btn-primary btn-block" value="Enviar mensaje">
+                <input type="button" onclick="sendMail()" style="cursor:pointer" class="btn btn-primary btn-block" value="Enviar mensaje">
               </div>
             </div>
             
@@ -187,7 +188,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/main.js"></script>
-	<script src="js/smtp.js"></script>
+	<!-- <script src="js/smtp.js"></script> -->
+	<script src="https://smtpjs.com/v2/smtp.js"></script>
+	<script src="js/ScriptAlert.js"></script>
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
@@ -218,22 +221,38 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			var para = 'andres.perez125@gmail.com';
 			var userName = 'andres.perez125@gmail.com';
 			
-			Email.send(de,
-			para,
-			asunto,
-			contenidoMensaje,
-			"smtp.elasticemail.com",
-			userName,
-			"de999b81-5a76-4071-a3a8-0ebc96e31822");
+			if(nombre.length > 0 && correo.length && tel.length && mensaje.length) 
+			{
+				Email.send(de,
+				para,
+				asunto,
+				contenidoMensaje,
+				"smtp.elasticemail.com",
+				userName,
+				"de999b81-5a76-4071-a3a8-0ebc96e31822");
 
-			/* Estructura Objeto Email			
-			Email.send("from@you.com",
-			"to@them.com",
-			"This is a subject",
-			"this is the body",
-			"smtp.yourisp.com",
-			"username",
-			"password");*/
+				document.getElementById("txtNombre").value = '';
+				document.getElementById("txtEmail").value = '';
+				document.getElementById("txtTel").value = '';
+				document.getElementById("texMensaje").value = '';
+				
+				alert('Muchas gracias por tu mensaje. Pronto nos pondremos en contacto contigo. Dios te bendiga', 'verde');
+
+				/* Estructura Objeto Email			
+				Email.send("from@you.com",
+				"to@them.com",
+				"This is a subject",
+				"this is the body",
+				"smtp.yourisp.com",
+				"username",
+				"password");*/
+			}
+			else {
+				alert('Por favor llena todos los campos del formulario', 'azul');
+		
+			}
+			
+			
 
 }
     </script>
