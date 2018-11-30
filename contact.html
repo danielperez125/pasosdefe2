@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Advent Church Website Template</title>
+    <title>Pasos de Fe.</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -24,7 +24,7 @@
     <header role="banner">
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="index.html">Advent</a>
+          <a class="navbar-brand" href="index.html">Pasos de Fe</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -32,26 +32,26 @@
           <div class="collapse navbar-collapse" id="navbarsExample05">
             <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">Who We Are</a>
+                <a class="nav-link" href="about.html">Quienes somos</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="ministries.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ministries</a>
+                <a class="nav-link dropdown-toggle" href="ministries.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ministerios</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="ministries.html">Children</a>
-                  <a class="dropdown-item" href="ministries.html">Students</a>
-                  <a class="dropdown-item" href="ministries.html">Care Ministry</a>
-                  <a class="dropdown-item" href="ministries.html">Missions</a>
-                  <a class="dropdown-item" href="ministries.html">Request Prayer</a>
+                  <a class="dropdown-item" href="escuelaninos.html">Escuela de Niños</a>
+                  <a class="dropdown-item" href="ministeriovarones.html">Varones</a>
+                  <a class="dropdown-item" href="ministeriodamas.html">Damas</a>
+                  <a class="dropdown-item" href="ministerioalabanza.html">Alabanza</a>
+                  <a class="dropdown-item" href="ministerioayudas.html">Ayudas</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="events.html">Events</a>
+                <a class="nav-link" href="events.html">Eventos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="contact.html">Contact</a>
+                <a class="nav-link" href="contact.html">Contáctenos</a>
               </li>
             </ul>
             
@@ -67,8 +67,8 @@
         <div class="container">
           <div class="row slider-text align-items-center justify-content-center">
             <div class="col-md-8 text-center col-sm-12 element-animate">
-              <h1>Get In Touch</h1>
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+              <h2>Permítenos ponernos en contacto contigo</h2>
+              <p class="mb-5">Ingresando tus datos.</p>
             </div>
           </div>
         </div>
@@ -82,8 +82,8 @@
       <div class="container">
         <div class="row mb-5 justify-content-center element-animate">
           <div class="col-md-12">
-            <span class="section-heading">Contact</span>
-            <h2>Get In Touch</h2>
+            <span class="section-heading">Tu información</span>
+            <h2>Diligencia el siguiente formulario</h2>
           </div>
         </div>
 
@@ -93,23 +93,23 @@
             
             <div class="row mb-4">
               <div class="col-md-4 mb-md-0 mb-4">
-                <input type="text" class="form-control" placeholder="Full Name">
+                <input type="text" class="form-control" placeholder="Tu nombre">
               </div>
               <div class="col-md-4 mb-md-0 mb-4">
-                <input type="text" class="form-control" placeholder="Email Address">
+                <input type="text" class="form-control" placeholder="Dirección de E-mail">
               </div>
               <div class="col-md-4 mb-md-0 mb-4">
-                <input type="text" class="form-control" placeholder="Phone">
+                <input type="text" class="form-control" placeholder="Teléfono">
               </div>
             </div>
             <div class="row mb-4">
               <div class="col-md-12">
-                <textarea name="#" id="" class="form-control" placeholder="Write some words of encouragement" cols="30" rows="10"></textarea>
+                <textarea name="#" id="texMensaje" class="form-control" placeholder="Danos a conocer si tienes alguna petición. La pondremos en manos de Dios" cols="30" rows="10"></textarea>
               </div>
             </div>
             <div class="row">
               <div class="col-md-4">
-                <input type="submit" class="btn btn-primary btn-block" value="Send Message">
+                <input type="button" onclick="sendMail()" class="btn btn-primary btn-block" value="Enviar mensaje">
               </div>
             </div>
             
@@ -132,33 +132,35 @@
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-4 mb-5">
-            <h3>About The Advent</h3>
-            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus et dolor blanditiis consequuntur ex voluptates perspiciatis omnis unde minima expedita.</p>
+            <h3>Misión de Dios en Pasos de Fe</h3>
+            <p class="mb-5">"Y haré de ti una nación grande, y te bendeciré, y engrandeceré tu nombre, y serás bendición.
+							Bendeciré a los que te bendijeren, y a los que te maldijeren maldeciré; y serán benditas en ti 
+							todas las familias de la tierra" Génesis 12:2-3</p>
             <ul class="list-unstyled footer-link d-flex footer-social">
-              <li><a href="#" class="p-2"><span class="fa fa-twitter"></span></a></li>
-              <li><a href="#" class="p-2"><span class="fa fa-facebook"></span></a></li>
-              <li><a href="#" class="p-2"><span class="fa fa-linkedin"></span></a></li>
-              <li><a href="#" class="p-2"><span class="fa fa-instagram"></span></a></li>
+			  <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span class="fa fa-twitter"></span></a></li>
+              <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span class="fa fa-facebook"></span></a></li>
+              <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span class="fa fa-linkedin"></span></a></li>
+              <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span class="fa fa-instagram"></span></a></li>
             </ul>
 
           </div>
           <div class="col-md-3 mb-5">
-            <h3>Quick Links</h3>
+            <h3>Acceso rápido</h3>
             <ul class="list-unstyled footer-link">
-              <li><a href="#">Sermons</a></li>
-              <li><a href="#">Ministries</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#">Predicaciones</a></li>
+              <li><a href="#">Ministerios</a></li>
+              <li><a href="#">Eventos</a></li>
+              <li><a href="#">Contáctenos</a></li>
             </ul>
           </div>
           <div class="col-md-5 mb-5">
-            <h3>Contact Info</h3>
+            <h3>Información de contacto</h3>
             <ul class="list-unstyled footer-link">
               <li class="d-block">
-                <span class="d-block">Address:</span>
-                <span class="text-white">34 Street Name, City Name Here, United States</span></li>
-              <li class="d-block"><span class="d-block">Telephone:</span><span class="text-white">+1 242 4942 290</span></li>
-              <li class="d-block"><span class="d-block">Email:</span><span class="text-white">info@yourdomain.com</span></li>
+                <span class="d-block">Dirección:</span>
+                <span class="text-white">Diagonal 40 Sur, 38-54. Barrio Inglés.</span></li>
+              <li class="d-block"><span class="d-block">Teléfono:</span><span class="text-white">+57 (1)255-8967</span></li>
+              <li class="d-block"><span class="d-block">Email:</span><span class="text-white">iglesiacristianapasosdefe@gmail.com</span></li>
             </ul>
           </div>
           
@@ -203,6 +205,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 });
                 }
             });
+			
+			function sendMail() {
+				var link = "mailto:andres.perez125@gmail.com"
+				 + "?cc=andres.perez125@gmail.com"
+				 + "&subject=" + escape("This is my subject")
+				 + "&body=" + escape(document.getElementById('texMensaje').value);
+				 window.location.href = link;
+}
     </script>
   </body>
 </html>
