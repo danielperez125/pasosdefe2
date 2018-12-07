@@ -19,6 +19,12 @@
 
   <!-- Theme Style -->
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    h3{
+      color:#856404;
+    }
+  </style>
 </head>
 
 <body>
@@ -109,82 +115,91 @@
             <br>
             <div id="dvAntiguoT" style="overflow: scroll;height: 507px;">
                 <ul>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Génesis</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Éxodo</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Levítico</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Números</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Deuteronomio</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Josué</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Jueces</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Rut</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">1 Samuel</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">2 Samuel</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">1 Reyes</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">2 Reyes</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">1 Crónicas</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">2 Crónicas</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Esdras</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Nehemías</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Ester</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Job</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Salmos</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Proverbios</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Eclesiastés</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Cantares</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Isaías</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Jeremías</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Lamentaciones</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Ezequiel</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Daniel</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Oseas</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Joel</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Amós</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Abdías</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Jonás</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Miqueas</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Nahúm</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Habacuc</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Sofonías</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Hageo</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Zacarías</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Malaquías</li>
+                    <li noLibro="1" cantCap="50" onclick="PintarCapitulos(this)" class="list-group-item list-group-item-action list-group-item-warning" 
+                      style="cursor:pointer"><h3>Génesis</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" 
+                    style="cursor:pointer"><h3>Éxodo</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" 
+                    style="cursor:pointer"><h3>Levítico</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" 
+                    style="cursor:pointer"><h3>Números</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" 
+                    style="cursor:pointer"><h3>Deuteronomio</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" 
+                    style="cursor:pointer"><h3>Josué</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" 
+                    style="cursor:pointer"><h3>Josué</li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" 
+                    style="cursor:pointer"><h3>Rut</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" 
+                    style="cursor:pointer"><h3>1 Samuel</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3> 2 Samuel</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>1 Reyes</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>2 Reyes</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>1 Crónicas</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>2 Crónicas</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Esdras</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Nehemías</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Ester</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Job</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Salmos</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Proverbios</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Eclesiastés</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Cantares</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Isaías</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Jeremías</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Lamentaciones</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Ezequiel</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Daniel</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Oseas</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Joel</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Amós</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Abdías</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Jonás</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Miqueas</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Nahúm</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Habacuc</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Sofonías</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Hageo</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Zacarías</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Malaquías</h3></li>
                   </ul>
             </div>
 
             <div id="dvNuevoT" style="overflow: scroll;height: 507px; display: none">
                 <ul>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Mateo</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Marcos</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Lucas</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Juan</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Hechos</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Romanos</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">1 Corintios</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">2 Corintios</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Gálatas</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Efesios</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Filipenses</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Colosenses</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">1 Tesalonicenses</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">2 Tesalonicenses</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">1 Timoteo</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">2 Timoteo</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Tito</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Filemón</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Hebreos</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Santiago</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">1 Pedro</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">2 Pedro</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">1 Juan</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">2 Juan</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">3 Juan</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Judas</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">Apocalipsis</li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Mateo</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Marcos</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Lucas</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Juan</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Hechos</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Romanos</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>1 Corintios</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>2 Corintios</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Gálatas</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Efesios</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Filipenses</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Colosenses</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>1 Tesalonicenses</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>2 Tesalonicenses</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>1 Timoteo</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>2 Timoteo</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Tito</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Filemón</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Hebreos</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Santiago</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>1 Pedro</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>2 Pedro</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>1 Juan</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>2 Juan</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>3 Juan</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Judas</h3></li>
+                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Apocalipsis</h3></li>
                   </ul>
             </div>
         </div>
         <div class="col-md-6">
-          <p><img src="img/img_1.jpg" alt="Image placeholder" class="img-fluid"></p>
+          <p><img src="img/mg_1.jpg" alt="Image placeholder" class="img-fluid"></p>
 
         </div>
       </div>
@@ -205,7 +220,7 @@
       <div class="row">
         <div class="col-md-4">
           <div class="media pastor d-block text-center">
-            <img src="../img/pastor_1.jpg" alt="Image placeholder" class="img-fluid mb-4">
+            <img src="img/pastor_1.jpg" alt="Image placeholder" class="img-fluid mb-4">
             <div class="media-body">
               <h3>Luis Matthew</h3>
               <p class="position">Head of Children Ministry</p>
@@ -218,7 +233,7 @@
         </div>
         <div class="col-md-4">
           <div class="media pastor d-block text-center">
-            <img src="../img/pastor_2.jpg" alt="Image placeholder" class="img-fluid mb-4">
+            <img src="img/pastor_2.jpg" alt="Image placeholder" class="img-fluid mb-4">
             <div class="media-body">
               <h3>Chris Mattwood</h3>
               <p class="position">Children Trainer</p>
@@ -231,7 +246,7 @@
         </div>
         <div class="col-md-4">
           <div class="media pastor d-block text-center">
-            <img src="../img/pastor_3.jpg" alt="Image placeholder" class="img-fluid mb-4">
+            <img src="img/pastor_3.jpg" alt="Image placeholder" class="img-fluid mb-4">
             <div class="media-body">
               <h3>Jack Winston</h3>
               <p class="position">Child Dedication Officer</p>
@@ -312,19 +327,20 @@
     <div class="container">
       <div class="row mb-5">
         <div class="col-md-4 mb-5">
-          <h3>About The Advent</h3>
-          <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus et dolor blanditiis
-            consequuntur ex voluptates perspiciatis omnis unde minima expedita.</p>
+          <h3>Misión de Dios en Pasos de Fe</h3>
+          <p class="mb-5">"Y haré de ti una nación grande, y te bendeciré, y engrandeceré tu nombre, y serás bendición.
+            Bendeciré a los que te bendijeren, y a los que te maldijeren maldeciré; y serán benditas en ti 
+            todas las familias de la tierra" Génesis 12:2-3</p>
           <ul class="list-unstyled footer-link d-flex footer-social">
-            <li><a href="#" class="p-2"><span class="fa fa-twitter"></span></a></li>
-            <li><a href="#" class="p-2"><span class="fa fa-facebook"></span></a></li>
-            <li><a href="#" class="p-2"><span class="fa fa-linkedin"></span></a></li>
-            <li><a href="#" class="p-2"><span class="fa fa-instagram"></span></a></li>
+      <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span class="fa fa-twitter"></span></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span class="fa fa-facebook"></span></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span class="fa fa-linkedin"></span></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span class="fa fa-instagram"></span></a></li>
           </ul>
 
         </div>
         <div class="col-md-3 mb-5">
-          <h3>Quick Links</h3>
+          <h3>Acceso rápido</h3>
           <ul class="list-unstyled footer-link">
             <li><a href="about.html">Quienes somos</a></li>
             <li><a href="ministeriovarones.html">Ministerios</a></li>
@@ -334,26 +350,22 @@
           </ul>
         </div>
         <div class="col-md-5 mb-5">
-          <h3>Contact Info</h3>
+          <h3>Información de contacto</h3>
           <ul class="list-unstyled footer-link">
             <li class="d-block">
-              <span class="d-block">Address:</span>
-              <span class="text-white">34 Street Name, City Name Here, United States</span></li>
-            <li class="d-block"><span class="d-block">Telephone:</span><span class="text-white">+1 242 4942 290</span></li>
-            <li class="d-block"><span class="d-block">Email:</span><span class="text-white">info@yourdomain.com</span></li>
+              <span class="d-block">Dirección:</span>
+              <span class="text-white">Diagonal 40 Sur, 38-54. Barrio Inglés.</span></li>
+            <li class="d-block"><span class="d-block">Teléfono:</span><span class="text-white">+57 (1)255-8967</span></li>
+            <li class="d-block"><span class="d-block">Email:</span><span class="text-white">iglesiacristianapasosdefe@gmail.com</span></li>
           </ul>
         </div>
-
+        
       </div>
       <div class="row">
         <div class="col-12 text-md-center text-left">
-          <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;
-            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
-            <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> <br> Demo Images
-            Unsplash</p>
+          <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> <br> Demo Images Unsplash</p>
         </div>
       </div>
     </div>
@@ -385,6 +397,90 @@
       } else if(elemento == 'spnNuevo'){
         $('#dvAntiguoT').css('display', 'none');
         $('#dvNuevoT').css('display', 'block');
+      }
+    }
+
+    function PintarCapitulos(_this){
+      var numLibro = $(_this).attr('noLibro');
+      var cantCap = $(_this).attr('cantCap');
+
+      $(_this).removeClass();
+      $(_this).addClass('list-group-item list-group-item list-group-item-warning');
+
+      for(x = 1; x <= cantCap; x++ ){
+        var ul = $('<ul/>');
+
+        ul.append('<li class="list-group-item list-group-item-action list-group-item-warning" cap="' + x + '" cantVer="' + 
+                       ObtenerVersiculo(numLibro, x) + '" onclick="PintarVerisulos(this)"><h5 style="color: #856404">' + x + '. ' + 
+                       ObtenerTituloCap(x) + 
+                  '</h5></li>');
+
+        $("[noLibro='1']").append(ul);;
+      }
+    }
+
+    function PintarVerisulos(_this){
+      var cap = $(_this).attr('cap');
+      var cantVer = $(_this).attr('cantVer');
+
+      $(_this).removeClass();
+      //$(_this).addClass('list-group-item list-group-item list-group-item-warning');
+      $(_this).append($('<div id="dvGenesis">'));
+
+      for(y = 1; y <= cantVer; y++ ){
+        var ul = $('<ul/>');
+        //ul.append('<li Parametro="gn_'+ cap + '" class="list-group-item list-group-item-action list-group-item-warning">' + y + '</li>');
+        ul.append('<ol Parametro="gn_'+ cap + '"><h5 style="color: #856404">' + y + '</h5></ol>');
+        //ul.append('<ol Parametro="gn_'+ cap + '">1</ol>');
+
+        $("[cap=" + cap + "]").append(ul);
+        //$("[Parametro=gn_" + cap + "]").parent().addClass('nav nav-pills');
+      }
+      $(_this).append($('</div>'));
+    }
+
+    function ObtenerVersiculo(_libro, _capitulo){
+      switch(_libro){
+        case '1':
+          if (_capitulo == 1){
+            return 31;
+          }else if (_capitulo == 2){
+            return 25;
+          }else if (_capitulo == 3){
+            return 24;
+          }else if (_capitulo == 4){
+            return 26;
+          }else if (_capitulo == 5){
+            return 32;
+          }else if (_capitulo == 6){
+            return 22;
+          }else if (_capitulo == 7){
+            return 24;
+          }else {
+            return 0;
+          }
+        break;
+      }
+    }
+
+    function ObtenerTituloCap(_numCap){
+      switch(_numCap){
+        case 1:
+          return 'La Creación';
+        case 2:
+          return 'El hombre en el huerto del Edén';
+        case 3:
+          return 'Desobediencia del hombre';
+        case 4:
+          return 'Caín y Abel';
+        case 5:
+          return 'Los descendientes de Adán (1 Cr. 1.1-4)';
+        case 6:
+          return 'La maldad de los hombres - Noé construye el arca (vr. 9-22)';
+        case 7:
+          return 'El diluvio';
+        default:
+          return '';
       }
     }
 
