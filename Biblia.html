@@ -575,16 +575,10 @@
 
     function PintarVerisulos(_this) {
 
-
-
-
-
       var numLibro = $(_this).parent().parent().attr('noLibro');
       var cap = $(_this).attr('cap');
       var cantVer = $(_this).attr('cantVer');
       var tituloDiv = 'dvLibro_' + numLibro + '_Cap_' + cap;
-
-
       var texto = ContenidoBiblia(numLibro,cap);
 
       if($('#pTemp').length > 0){
@@ -602,19 +596,20 @@
       }
       $("[Parametro='CapitulosBiblia']").addClass('list-group-item list-group-item-action list-group-item-warning');
       $(_this).removeClass();
+      $(_this).addClass('list-group-item list-group-item-action list-group-item-active');
       $(_this).append($('<div OcultarLibro="Amen" id="' + tituloDiv + '">'));
 
-      var ul = $('<ul/>');
+      // var ul = $('<ul/>');
 
-      for (y = 1; y <= cantVer; y++) {
+      // for (y = 1; y <= cantVer; y++) {
 
-        ul.append('<li Parametro="gn_' + cap + '" class="nav-link active" style="color:#856404">' +
-          ((y < 10) ? '0' + y : y) + '</li>&nbsp;');
-      }
+      //   ul.append('<li Parametro="gn_' + cap + '" class="nav-link active" style="color:#856404">' +
+      //     ((y < 10) ? '0' + y : y) + '</li>&nbsp;');
+      // }
 
-      $('#' + tituloDiv).append(ul);
-      $('#' + tituloDiv).append('<br>');
-      $("[Parametro=gn_" + cap + "]").parent().addClass('nav nav-pills');
+      // $('#' + tituloDiv).append(ul);
+      // $('#' + tituloDiv).append('<br>');
+      // $("[Parametro=gn_" + cap + "]").parent().addClass('nav nav-pills');
 
       ValidarLibrosAbiertos(tituloDiv);
     }
