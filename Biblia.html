@@ -88,7 +88,8 @@
               <small id="txtBusquedaTips" class="form-text text-muted">"Lámpara es a mis pies tu palabra, Y lumbrera a
                 mi camino."</small> -->
             </div>
-            <h2 class="mb-4">“Lámpara es a mis pies tu palabra, Y lumbrera a mi camino.” <p>— Salmos. 119:105</p></h2>
+            <h2 class="mb-4">“Lámpara es a mis pies tu palabra, Y lumbrera a mi camino.” <p>— Salmos. 119:105</p>
+            </h2>
           </div>
         </div>
       </div>
@@ -109,98 +110,242 @@
       </div> -->
       <div class="row" id="dvLibros">
         <div class="col-md-6">
-            <span id="spnAntiguo" class="section-heading" style="cursor:pointer" onclick="AbrirTestamento(this)">Antiguo Testamento</span>
-            <span id="spnNuevo" class="section-heading" style="cursor:pointer" onclick="AbrirTestamento(this)">Nuevo Testamento</span>
-            <input type="text" class="form-control" id="txtBusqueda" aria-describedby="txtBusquedaTips" placeholder="Ingresa cualquier aspecto de búsqueda">
-            <br>
-            <div id="dvAntiguoT" style="overflow: scroll;height: 507px;">
-                <ul>
-                    <li noLibro="1" cantCap="50" onclick="PintarCapitulos(this)" class="list-group-item list-group-item-action list-group-item-warning" 
-                      style="cursor:pointer"><h3>Génesis</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" 
-                    style="cursor:pointer"><h3>Éxodo</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" 
-                    style="cursor:pointer"><h3>Levítico</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" 
-                    style="cursor:pointer"><h3>Números</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" 
-                    style="cursor:pointer"><h3>Deuteronomio</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" 
-                    style="cursor:pointer"><h3>Josué</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" 
-                    style="cursor:pointer"><h3>Josué</li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" 
-                    style="cursor:pointer"><h3>Rut</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" 
-                    style="cursor:pointer"><h3>1 Samuel</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3> 2 Samuel</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>1 Reyes</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>2 Reyes</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>1 Crónicas</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>2 Crónicas</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Esdras</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Nehemías</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Ester</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Job</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Salmos</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Proverbios</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Eclesiastés</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Cantares</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Isaías</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Jeremías</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Lamentaciones</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Ezequiel</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Daniel</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Oseas</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Joel</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Amós</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Abdías</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Jonás</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Miqueas</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Nahúm</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Habacuc</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Sofonías</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Hageo</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Zacarías</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Malaquías</h3></li>
-                  </ul>
-            </div>
+          <span id="spnAntiguo" class="section-heading" style="cursor:pointer" onclick="AbrirTestamento(this)">Antiguo
+            Testamento</span>
+          <span id="spnNuevo" class="section-heading" style="cursor:pointer" onclick="AbrirTestamento(this)">Nuevo
+            Testamento</span>
+          <input type="text" class="form-control" id="txtBusqueda" aria-describedby="txtBusquedaTips" placeholder="Ingresa cualquier aspecto de búsqueda">
+          <br>
+          <div id="dvAntiguoT" style="overflow: scroll;height: 507px;">
+            <ul>
+              <li noLibro="1" cantCap="50" onclick="PintarCapitulos(this)" class="list-group-item list-group-item-action list-group-item-warning"
+                style="cursor:pointer">
+                <h3>Génesis</h3>
+              </li>
+              <li noLibro="2" cantCap="40" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Éxodo</h3>
+              </li>
+              <li noLibro="3" cantCap="27" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Levítico</h3>
+              </li>
+              <li noLibro="4" cantCap="36" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Números</h3>
+              </li>
+              <li noLibro="5" cantCap="34" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Deuteronomio</h3>
+              </li>
+              <li noLibro="6" cantCap="24" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Josué</h3>
+              </li>
+              <li noLibro="7" cantCap="21" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Jueces
+              </li>
+              <li noLibro="8" cantCap="4" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Rut</h3>
+              </li>
+              <li noLibro="9" cantCap="31" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>1 Samuel</h3>
+              </li>
+              <li noLibro="10" cantCap="24" class="list-group-item list-group-item-action list-group-item-warning"
+                style="cursor:pointer">
+                <h3> 2 Samuel</h3>
+              </li>
+              <li noLibro="11" cantCap="22" class="list-group-item list-group-item-action list-group-item-warning"
+                style="cursor:pointer">
+                <h3>1 Reyes</h3>
+              </li>
+              <li noLibro="12" cantCap="25" class="list-group-item list-group-item-action list-group-item-warning"
+                style="cursor:pointer">
+                <h3>2 Reyes</h3>
+              </li>
+              <li noLibro="13" cantCap="29" class="list-group-item list-group-item-action list-group-item-warning"
+                style="cursor:pointer">
+                <h3>1 Crónicas</h3>
+              </li>
+              <li noLibro="14" cantCap="36" class="list-group-item list-group-item-action list-group-item-warning"
+                style="cursor:pointer">
+                <h3>2 Crónicas</h3>
+              </li>
+              <li noLibro="15" cantCap="10" class="list-group-item list-group-item-action list-group-item-warning"
+                style="cursor:pointer">
+                <h3>Esdras</h3>
+              </li>
+              <li noLibro="16" cantCap="13" class="list-group-item list-group-item-action list-group-item-warning"
+                style="cursor:pointer">
+                <h3>Nehemías</h3>
+              </li>
+              <li noLibro="17" cantCap="10" class="list-group-item list-group-item-action list-group-item-warning"
+                style="cursor:pointer">
+                <h3>Ester</h3>
+              </li>
+              <li noLibro="18" cantCap="42" class="list-group-item list-group-item-action list-group-item-warning"
+                style="cursor:pointer">
+                <h3>Job</h3>
+              </li>
+              <li noLibro="19" cantCap="150" class="list-group-item list-group-item-action list-group-item-warning"
+                style="cursor:pointer">
+                <h3>Salmos</h3>
+              </li>
+              <li noLibro="20" cantCap="31" class="list-group-item list-group-item-action list-group-item-warning"
+                style="cursor:pointer">
+                <h3>Proverbios</h3>
+              </li>
+              <li noLibro="21" cantCap="12" class="list-group-item list-group-item-action list-group-item-warning"
+                style="cursor:pointer">
+                <h3>Eclesiastés</h3>
+              </li>
+              <li noLibro="22" cantCap="8" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Cantares</h3>
+              </li>
+              <li noLibro="23" cantCap="66" class="list-group-item list-group-item-action list-group-item-warning"
+                style="cursor:pointer">
+                <h3>Isaías</h3>
+              </li>
+              <li noLibro="24" cantCap="52" class="list-group-item list-group-item-action list-group-item-warning"
+                style="cursor:pointer">
+                <h3>Jeremías</h3>
+              </li>
+              <li noLibro="25" cantCap="5" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Lamentaciones</h3>
+              </li>
+              <li noLibro="26" cantCap="48" class="list-group-item list-group-item-action list-group-item-warning"
+                style="cursor:pointer">
+                <h3>Ezequiel</h3>
+              </li>
+              <li noLibro="27" cantCap="12" class="list-group-item list-group-item-action list-group-item-warning"
+                style="cursor:pointer">
+                <h3>Daniel</h3>
+              </li>
+              <li noLibro="28" cantCap="14" class="list-group-item list-group-item-action list-group-item-warning"
+                style="cursor:pointer">
+                <h3>Oseas</h3>
+              </li>
+              <li noLibro="29" cantCap="3" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Joel</h3>
+              </li>
+              <li noLibro="30" cantCap="9" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Amós</h3>
+              </li>
+              <li noLibro="31" cantCap="1" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Abdías</h3>
+              </li>
+              <li noLibro="32" cantCap="4" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Jonás</h3>
+              </li>
+              <li noLibro="33" cantCap="7" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Miqueas</h3>
+              </li>
+              <li noLibro="34" cantCap="3" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Nahúm</h3>
+              </li>
+              <li noLibro="35" cantCap="3" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Habacuc</h3>
+              </li>
+              <li noLibro="36" cantCap="3" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Sofonías</h3>
+              </li>
+              <li noLibro="37" cantCap="2" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Hageo</h3>
+              </li>
+              <li noLibro="38" cantCap="14" class="list-group-item list-group-item-action list-group-item-warning"
+                style="cursor:pointer">
+                <h3>Zacarías</h3>
+              </li>
+              <li noLibro="39" cantCap="4" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Malaquías</h3>
+              </li>
+            </ul>
+          </div>
 
-            <div id="dvNuevoT" style="overflow: scroll;height: 507px; display: none">
-                <ul>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Mateo</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Marcos</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Lucas</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Juan</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Hechos</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Romanos</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>1 Corintios</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>2 Corintios</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Gálatas</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Efesios</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Filipenses</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Colosenses</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>1 Tesalonicenses</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>2 Tesalonicenses</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>1 Timoteo</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>2 Timoteo</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Tito</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Filemón</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Hebreos</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Santiago</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>1 Pedro</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>2 Pedro</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>1 Juan</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>2 Juan</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>3 Juan</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Judas</h3></li>
-                    <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer"><h3>Apocalipsis</h3></li>
-                  </ul>
-            </div>
+          <div id="dvNuevoT" style="overflow: scroll;height: 507px; display: none">
+            <ul>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Mateo</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Marcos</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Lucas</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Juan</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Hechos</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Romanos</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>1 Corintios</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>2 Corintios</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Gálatas</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Efesios</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Filipenses</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Colosenses</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>1 Tesalonicenses</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>2 Tesalonicenses</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>1 Timoteo</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>2 Timoteo</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Tito</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Filemón</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Hebreos</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Santiago</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>1 Pedro</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>2 Pedro</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>1 Juan</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>2 Juan</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>3 Juan</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Judas</h3>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+                <h3>Apocalipsis</h3>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="col-md-6">
-          <p><img src="img/mg_1.jpg" alt="Image placeholder" class="img-fluid"></p>
-
+            <div id="dvContenedorTextoBiblia" style="overflow: scroll;height: 507px;margin-top: 22%">
+            </div>
         </div>
       </div>
       <div class="row">
@@ -329,13 +474,17 @@
         <div class="col-md-4 mb-5">
           <h3>Misión de Dios en Pasos de Fe</h3>
           <p class="mb-5">"Y haré de ti una nación grande, y te bendeciré, y engrandeceré tu nombre, y serás bendición.
-            Bendeciré a los que te bendijeren, y a los que te maldijeren maldeciré; y serán benditas en ti 
+            Bendeciré a los que te bendijeren, y a los que te maldijeren maldeciré; y serán benditas en ti
             todas las familias de la tierra" Génesis 12:2-3</p>
           <ul class="list-unstyled footer-link d-flex footer-social">
-      <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span class="fa fa-twitter"></span></a></li>
-            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span class="fa fa-facebook"></span></a></li>
-            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span class="fa fa-linkedin"></span></a></li>
-            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span class="fa fa-instagram"></span></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span
+                  class="fa fa-twitter"></span></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span
+                  class="fa fa-facebook"></span></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span
+                  class="fa fa-linkedin"></span></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100009078848002" class="p-2"><span
+                  class="fa fa-instagram"></span></a></li>
           </ul>
 
         </div>
@@ -359,13 +508,17 @@
             <li class="d-block"><span class="d-block">Email:</span><span class="text-white">iglesiacristianapasosdefe@gmail.com</span></li>
           </ul>
         </div>
-        
+
       </div>
       <div class="row">
         <div class="col-12 text-md-center text-left">
-          <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> <br> Demo Images Unsplash</p>
+          <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
+            <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> <br> Demo Images
+            Unsplash</p>
         </div>
       </div>
     </div>
@@ -388,103 +541,437 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
   <script>
 
-    function AbrirTestamento(_this){
+    function AbrirTestamento(_this) {
       var elemento = $(_this)[0].id;
 
-      if(elemento == 'spnAntiguo'){
+      if (elemento == 'spnAntiguo') {
         $('#dvAntiguoT').css('display', 'block');
         $('#dvNuevoT').css('display', 'none');
-      } else if(elemento == 'spnNuevo'){
+      } else if (elemento == 'spnNuevo') {
         $('#dvAntiguoT').css('display', 'none');
         $('#dvNuevoT').css('display', 'block');
       }
     }
 
-    function PintarCapitulos(_this){
+    function PintarCapitulos(_this) {
       var numLibro = $(_this).attr('noLibro');
       var cantCap = $(_this).attr('cantCap');
+
 
       $(_this).removeClass();
       $(_this).addClass('list-group-item list-group-item list-group-item-warning');
 
-      for(x = 1; x <= cantCap; x++ ){
+      for (x = 1; x <= cantCap; x++) {
         var ul = $('<ul/>');
 
-        ul.append('<li class="list-group-item list-group-item-action list-group-item-warning" cap="' + x + '" cantVer="' + 
-                       ObtenerVersiculo(numLibro, x) + '" onclick="PintarVerisulos(this)"><h5 style="color: #856404">' + x + '. ' + 
-                       ObtenerTituloCap(x) + 
-                  '</h5></li>');
+        ul.append('<li Parametro="CapitulosBiblia" class="list-group-item list-group-item-action list-group-item-warning" cap="' + x + 
+                  '" cantVer="' + ObtenerVersiculo(numLibro, x) + '" onclick="PintarVerisulos(this)"><h5 style="color: #856404">' + x + '. ' +
+                   ObtenerTituloCap(x,numLibro) +
+                 '</h5></li>');
 
         $("[noLibro='1']").append(ul);;
       }
     }
 
-    function PintarVerisulos(_this){
+    function PintarVerisulos(_this) {
+
+
+
+
+
+      var numLibro = $(_this).parent().parent().attr('noLibro');
       var cap = $(_this).attr('cap');
       var cantVer = $(_this).attr('cantVer');
+      var tituloDiv = 'dvLibro_' + numLibro + '_Cap_' + cap;
 
-      $(_this).removeClass();
-      //$(_this).addClass('list-group-item list-group-item list-group-item-warning');
-      $(_this).append($('<div id="dvGenesis">'));
 
-      for(y = 1; y <= cantVer; y++ ){
-        var ul = $('<ul/>');
-        //ul.append('<li Parametro="gn_'+ cap + '" class="list-group-item list-group-item-action list-group-item-warning">' + y + '</li>');
-        ul.append('<ol Parametro="gn_'+ cap + '"><h5 style="color: #856404">' + y + '</h5></ol>');
-        //ul.append('<ol Parametro="gn_'+ cap + '">1</ol>');
+      var texto = ContenidoBiblia(numLibro,cap);
 
-        $("[cap=" + cap + "]").append(ul);
-        //$("[Parametro=gn_" + cap + "]").parent().addClass('nav nav-pills');
+      if($('#pTemp').length > 0){
+        $('#pTemp').remove();
       }
-      $(_this).append($('</div>'));
+      var parrafo = $('<p id="pTemp">');
+
+      parrafo.append(texto);
+
+      $('#dvContenedorTextoBiblia').append(parrafo);
+
+
+      if ($('#' + tituloDiv).length > 0) {
+        $('#' + tituloDiv).remove();
+      }
+      $("[Parametro='CapitulosBiblia']").addClass('list-group-item list-group-item-action list-group-item-warning');
+      $(_this).removeClass();
+      $(_this).append($('<div OcultarLibro="Amen" id="' + tituloDiv + '">'));
+
+      var ul = $('<ul/>');
+
+      for (y = 1; y <= cantVer; y++) {
+
+        ul.append('<li Parametro="gn_' + cap + '" class="nav-link active" style="color:#856404">' +
+          ((y < 10) ? '0' + y : y) + '</li>&nbsp;');
+      }
+
+      $('#' + tituloDiv).append(ul);
+      $('#' + tituloDiv).append('<br>');
+      $("[Parametro=gn_" + cap + "]").parent().addClass('nav nav-pills');
+
+      ValidarLibrosAbiertos(tituloDiv);
     }
 
-    function ObtenerVersiculo(_libro, _capitulo){
-      switch(_libro){
+    function ObtenerVersiculo(_libro, _capitulo) {
+      switch (_libro) {
+        //#region Génesis
         case '1':
-          if (_capitulo == 1){
-            return 31;
-          }else if (_capitulo == 2){
-            return 25;
-          }else if (_capitulo == 3){
-            return 24;
-          }else if (_capitulo == 4){
-            return 26;
-          }else if (_capitulo == 5){
-            return 32;
-          }else if (_capitulo == 6){
-            return 22;
-          }else if (_capitulo == 7){
-            return 24;
-          }else {
+               if (_capitulo == 1) { return 31; }
+          else if (_capitulo == 2) { return 25; }
+          else if (_capitulo == 3) { return 24; }
+          else if (_capitulo == 4) { return 26; }
+          else if (_capitulo == 5) { return 32; }
+          else if (_capitulo == 6) { return 22; }
+          else if (_capitulo == 7) { return 24; }
+          else if (_capitulo == 8) { return 22; }
+          else if (_capitulo == 9) { return 29; }
+          else if (_capitulo == 10) { return 32; }
+          else if (_capitulo == 11) { return 32; }
+          else if (_capitulo == 12) { return 20; }
+          else if (_capitulo == 13) { return 18; }
+          else if (_capitulo == 14) { return 24; } 
+          else if (_capitulo == 15) { return 21;}
+          else if (_capitulo == 16) { return 16;} 
+          else if (_capitulo == 17) { return 27;} 
+          else if (_capitulo == 18) { return 33;} 
+          else if (_capitulo == 19) { return 38;} 
+          else if (_capitulo == 20) { return 18;} 
+          else if (_capitulo == 21) { return 34;} 
+          else if (_capitulo == 22) { return 24;} 
+          else if (_capitulo == 23) { return 20;} 
+          else if (_capitulo == 24) { return 67;} 
+          else if (_capitulo == 25) { return 34;} 
+          else if (_capitulo == 26) { return 35;} 
+          else if (_capitulo == 27) { return 46;}
+          else if (_capitulo == 28) { return 46;}
+          else if (_capitulo == 29) { return 22;}
+          else if (_capitulo == 30) { return 35;}
+          else if (_capitulo == 31) { return 43;}
+          else if (_capitulo == 32) { return 55;}
+          else if (_capitulo == 33) { return 32;}
+          else if (_capitulo == 34) { return 20;}
+          else if (_capitulo == 35) { return 31;}
+          else if (_capitulo == 36) { return 29;}
+          else if (_capitulo == 37) { return 43;}
+          else if (_capitulo == 38) { return 36;}
+          else if (_capitulo == 39) { return 30;}
+          else if (_capitulo == 40) { return 23;}
+          else if (_capitulo == 41) { return 57;}
+          else if (_capitulo == 42) { return 38;}
+          else if (_capitulo == 43) { return 34;}
+          else if (_capitulo == 44) { return 34;}
+          else if (_capitulo == 45) { return 28;}
+          else if (_capitulo == 46) { return 34;}
+          else if (_capitulo == 47) { return 31;}
+          else if (_capitulo == 48) { return 22;}
+          else if (_capitulo == 49) { return 33;}
+          else if (_capitulo == 50) { return 26;}
+        //#endregion
+        
+          else {
             return 0;
           }
-        break;
+          break;
       }
     }
 
-    function ObtenerTituloCap(_numCap){
-      switch(_numCap){
-        case 1:
-          return 'La Creación';
-        case 2:
-          return 'El hombre en el huerto del Edén';
-        case 3:
-          return 'Desobediencia del hombre';
-        case 4:
-          return 'Caín y Abel';
-        case 5:
-          return 'Los descendientes de Adán (1 Cr. 1.1-4)';
-        case 6:
-          return 'La maldad de los hombres - Noé construye el arca (vr. 9-22)';
-        case 7:
-          return 'El diluvio';
-        default:
-          return '';
+    function ObtenerTituloCap(_numCap, _libro) {
+      
+      switch (_libro) {
+        //#region Génesis
+        case '1':
+               if (_numCap == 1) { return 'La Creación'; }
+          else if (_numCap == 2) { return 'El hombre en el huerto del Edén'; }
+          else if (_numCap == 3) { return 'Desobediencia del hombre'; }
+          else if (_numCap == 4) { return 'Caín y Abel'; }
+          else if (_numCap == 5) { return 'Los descendientes de Adán (1 Cr. 1.1-4)'; }
+          else if (_numCap == 6) { return 'La maldad de los hombres - Noé construye el arca (vr. 9-22)'; }
+          else if (_numCap == 7) { return 'El diluvio'; }
+          else if (_numCap == 8) { return 'El diluvio'; }
+          else if (_numCap == 9) { return 'Pacto de Dios con Noé - Embriaguez de Noé (vr. 18-29)'; }
+          else if (_numCap == 10) { return 'Los descendientes de los hijos de Noé (1 Cr. 1.5-23)'; }
+          else if (_numCap == 11) { return 'La torre de Babel (vr. 1-9)- Los descendientes de Sem (1 Cr. 1.24-27) - (vr. 10-26) - Los descendientes de Taré - (vr. 27-32)'; }
+          else if (_numCap == 12) { return 20; }
+          else if (_numCap == 13) { return 18; }
+          else if (_numCap == 14) { return 24; } 
+          else if (_numCap == 15) { return 21;}
+          else if (_numCap == 16) { return 16;} 
+          else if (_numCap == 17) { return 27;} 
+          else if (_numCap == 18) { return 33;} 
+          else if (_numCap == 19) { return 38;} 
+          else if (_numCap == 20) { return 18;} 
+          else if (_numCap == 21) { return 34;} 
+          else if (_numCap == 22) { return 24;} 
+          else if (_numCap == 23) { return 20;} 
+          else if (_numCap == 24) { return 67;} 
+          else if (_numCap == 25) { return 34;} 
+          else if (_numCap == 26) { return 35;} 
+          else if (_numCap == 27) { return 46;}
+          else if (_numCap == 28) { return 46;}
+          else if (_numCap == 29) { return 22;}
+          else if (_numCap == 30) { return 35;}
+          else if (_numCap == 31) { return 43;}
+          else if (_numCap == 32) { return 55;}
+          else if (_numCap == 33) { return 32;}
+          else if (_numCap == 34) { return 20;}
+          else if (_numCap == 35) { return 31;}
+          else if (_numCap == 36) { return 29;}
+          else if (_numCap == 37) { return 43;}
+          else if (_numCap == 38) { return 36;}
+          else if (_numCap == 39) { return 30;}
+          else if (_numCap == 40) { return 23;}
+          else if (_numCap == 41) { return 57;}
+          else if (_numCap == 42) { return 38;}
+          else if (_numCap == 43) { return 34;}
+          else if (_numCap == 44) { return 34;}
+          else if (_numCap == 45) { return 28;}
+          else if (_numCap == 46) { return 34;}
+          else if (_numCap == 47) { return 31;}
+          else if (_numCap == 48) { return 22;}
+          else if (_numCap == 49) { return 33;}
+          else if (_numCap == 50) { return 26;}
+        //#endregion
+        
+          else {
+            return 0;
+          }
+          break;
       }
+
+
+
+
+
     }
 
+    function ValidarLibrosAbiertos(nombreDiv) {
 
+      $("[OcultarLibro='Amen']").css('display', 'none');
+      $('#' + nombreDiv).css('display', 'block');
+
+    }
+
+    function ContenidoBiblia(_libro, _capitulo){
+      switch(_libro){
+        //#region Génesis
+        case '1':
+         //#region Cap 1
+          if(_capitulo == 1){
+            return             '<h4>La creación                                                                                                                                                                                                                  </h4>'+
+'<p>1  En el principio creó Dios los cielos y la tierra.                                                                                                                                                                                     </p>'+
+'<p>2 Y la tierra estaba desordenada y vacía, y las tinieblas estaban sobre la faz del abismo, y el Espíritu de Dios se movía sobre la faz de las aguas.                                                                                     </p>'+
+'<p>3 Y dijo Dios: Sea la luz; y fue la luz.                                                                                                                                                                                                 </p>'+
+'<p>4 Y vio Dios que la luz era buena; y separó Dios la luz de las tinieblas.                                                                                                                                                                </p>'+
+'<p>5 Y llamó Dios a la luz Día, y a las tinieblas llamó Noche. Y fue la tarde y la mañana un día.                                                                                                                                           </p>'+
+'<p>6 Luego dijo Dios: Haya expansión en medio de las aguas, y separe las aguas de las aguas.                                                                                                                                                </p>'+
+'<p>7 E hizo Dios la expansión, y separó las aguas que estaban debajo de la expansión, de las aguas que estaban sobre la expansión. Y fue así.                                                                                               </p>'+
+'<p>8 Y llamó Dios a la expansión Cielos. Y fue la tarde y la mañana el día segundo.                                                                                                                                                         </p>'+
+'<p>9 Dijo también Dios: Júntense las aguas que están debajo de los cielos en un lugar, y descúbrase lo seco. Y fue así.                                                                                                                     </p>'+
+'<p>10 Y llamó Dios a lo seco Tierra, y a la reunión de las aguas llamó Mares. Y vio Dios que era bueno.                                                                                                                                     </p>'+
+'<p>11 Después dijo Dios: Produzca la tierra hierba verde, hierba que dé semilla; árbol de fruto que dé fruto según su género, que su semilla esté en él, sobre la tierra. Y fue así.                                                        </p>'+
+'<p>12 Produjo, pues, la tierra hierba verde, hierba que da semilla según su naturaleza, y árbol que da fruto, cuya semilla está en él, según su género. Y vio Dios que era bueno.                                                           </p>'+
+'<p>13 Y fue la tarde y la mañana el día tercero.                                                                                                                                                                                            </p>'+
+'<p>14 Dijo luego Dios: Haya lumbreras en la expansión de los cielos para separar el día de la noche; y sirvan de señales para las estaciones, para días y años,                                                                             </p>'+
+'<p>15 y sean por lumbreras en la expansión de los cielos para alumbrar sobre la tierra. Y fue así.                                                                                                                                          </p>'+
+'<p>16 E hizo Dios las dos grandes lumbreras; la lumbrera mayor para que señorease en el día, y la lumbrera menor para que señorease en la noche; hizo también las estrellas.                                                                </p>'+
+'<p>17 Y las puso Dios en la expansión de los cielos para alumbrar sobre la tierra,                                                                                                                                                          </p>'+
+'<p>18 y para señorear en el día y en la noche, y para separar la luz de las tinieblas. Y vio Dios que era bueno.                                                                                                                            </p>'+
+'<p>19 Y fue la tarde y la mañana el día cuarto.                                                                                                                                                                                             </p>'+
+'<p>20 Dijo Dios: Produzcan las aguas seres vivientes, y aves que vuelen sobre la tierra, en la abierta expansión de los cielos.                                                                                                             </p>'+
+'<p>21 Y creó Dios los grandes monstruos marinos, y todo ser viviente que se mueve, que las aguas produjeron según su género, y toda ave alada según su especie. Y vio Dios que era bueno.                                                   </p>'+
+'<p>22 Y Dios los bendijo, diciendo: Fructificad y multiplicaos, y llenad las aguas en los mares, y multiplíquense las aves en la tierra.                                                                                                    </p>'+
+'<p>23 Y fue la tarde y la mañana el día quinto.                                                                                                                                                                                             </p>'+
+'<p>24 Luego dijo Dios: Produzca la tierra seres vivientes según su género, bestias y serpientes y animales de la tierra según su especie. Y fue así.                                                                                        </p>'+
+'<p>25 E hizo Dios animales de la tierra según su género, y ganado según su género, y todo animal que se arrastra sobre la tierra según su especie. Y vio Dios que era bueno.                                                                </p>'+
+'<p>26 Entonces dijo Dios: Hagamos al hombre a nuestra imagen, conforme a nuestra semejanza; y señoree en los peces del mar, en las aves de los cielos, en las bestias, en toda la tierra, y en todo animal que se arrastra sobre la tierra. </p>'+
+'<p>27 Y creó Dios al hombre a su imagen, a imagen de Dios lo creó; varón y hembra los creó.                                                                                                                                                 </p>'+
+'<p>28 Y los bendijo Dios, y les dijo: Fructificad y multiplicaos; llenad la tierra, y sojuzgadla, y señoread en los peces del mar, en las aves de los cielos, y en todas las bestias que se mueven sobre la tierra.                         </p>'+
+'<p>29 Y dijo Dios: He aquí que os he dado toda planta que da semilla, que está sobre toda la tierra, y todo árbol en que hay fruto y que da semilla; os serán para comer.                                                                   </p>'+
+'<p>30 Y a toda bestia de la tierra, y a todas las aves de los cielos, y a todo lo que se arrastra sobre la tierra, en que hay vida, toda planta verde les será para comer. Y fue así.                                                       </p>'+
+'<p>31 Y vio Dios todo lo que había hecho, y he aquí que era bueno en gran manera. Y fue la tarde y la mañana el día sexto.                                                                                                                  </p>';
+          }
+         //#endregion
+          if(_capitulo == 2){
+            return '<p>1  Fueron, pues, acabados los cielos y la tierra, y todo el ejército de ellos.                                                                                                                              </p>'+
+'<p>2 Y acabó Dios en el día séptimo la obra que hizo; y reposó el día séptimo de toda la obra que hizo.                                                                                                                           </p>'+
+'<p>3 Y bendijo Dios al día séptimo, y lo santificó, porque en él reposó de toda la obra que había hecho en la creación.                                                                                                           </p>'+
+'<h4>El hombre en el huerto del Edén                                                                                                                                                                                               </h4>'+
+'<p>4 Estos son los orígenes de los cielos y de la tierra cuando fueron creados, el día que Jehová Dios hizo la tierra y los cielos,                                                                                               </p>'+
+'<p>5 y toda planta del campo antes que fuese en la tierra, y toda hierba del campo antes que naciese; porque Jehová Dios aún no había hecho llover sobre la tierra, ni había hombre para que labrase la tierra,                   </p>'+
+'<p>6 sino que subía de la tierra un vapor, el cual regaba toda la faz de la tierra.                                                                                                                                               </p>'+
+'<p>7 Entonces Jehová Dios formó al hombre del polvo de la tierra, y sopló en su nariz aliento de vida, y fue el hombre un ser viviente.                                                                                           </p>'+
+'<p>8 Y Jehová Dios plantó un huerto en Edén, al oriente; y puso allí al hombre que había formado.                                                                                                                                 </p>'+
+'<p>9 Y Jehová Dios hizo nacer de la tierra todo árbol delicioso a la vista, y bueno para comer; también el árbol de vida en medio del huerto, y el árbol de la ciencia del bien y del mal.                                        </p>'+
+'<p>10 Y salía de Edén un río para regar el huerto, y de allí se repartía en cuatro brazos.                                                                                                                                        </p>'+
+'<p>11 El nombre del uno era Pisón; éste es el que rodea toda la tierra de Havila, donde hay oro;                                                                                                                                  </p>'+
+'<p>12 y el oro de aquella tierra es bueno; hay allí también bedelio y ónice.                                                                                                                                                      </p>'+
+'<p>13 El nombre del segundo río es Gihón; éste es el que rodea toda la tierra de Cus.                                                                                                                                             </p>'+
+'<p>14 Y el nombre del tercer río es Hidekel; éste es el que va al oriente de Asiria. Y el cuarto río es el Eufrates.                                                                                                              </p>'+
+'<p>15 Tomó, pues, Jehová Dios al hombre, y lo puso en el huerto de Edén, para que lo labrara y lo guardase.                                                                                                                       </p>'+
+'<p>16 Y mandó Jehová Dios al hombre, diciendo: De todo árbol del huerto podrás comer;                                                                                                                                             </p>'+
+'<p>17 mas del árbol de la ciencia del bien y del mal no comerás; porque el día que de él comieres, ciertamente morirás.                                                                                                           </p>'+
+'<p>18 Y dijo Jehová Dios: No es bueno que el hombre esté solo; le haré ayuda idónea para él.                                                                                                                                      </p>'+
+'<p>19 Jehová Dios formó, pues, de la tierra toda bestia del campo, y toda ave de los cielos, y las trajo a Adán para que viese cómo las había de llamar; y todo lo que Adán llamó a los animales vivientes, ese es su nombre.     </p>'+
+'<p>20 Y puso Adán nombre a toda bestia y ave de los cielos y a todo ganado del campo; mas para Adán no se halló ayuda idónea para él.                                                                                             </p>'+
+'<p>21 Entonces Jehová Dios hizo caer sueño profundo sobre Adán, y mientras éste dormía, tomó una de sus costillas, y cerró la carne en su lugar.                                                                                  </p>'+
+'<p>22 Y de la costilla que Jehová Dios tomó del hombre, hizo una mujer, y la trajo al hombre.                                                                                                                                     </p>'+
+'<p>23 Dijo entonces Adán: Esto es ahora hueso de mis huesos y carne de mi carne; ésta será llamada Varona,[a] porque del varón[b] fue tomada.                                                                                     </p>'+
+'<p>24 Por tanto, dejará el hombre a su padre y a su madre, y se unirá a su mujer, y serán una sola carne.                                                                                                                         </p>'+
+'<p>25 Y estaban ambos desnudos, Adán y su mujer, y no se avergonzaban.                                                                                                                                                            </p>';
+          }
+        
+          if(_capitulo == 3){
+            return '<h4>Desobediencia del hombre </h4>'+
+'<p>1  Pero la serpiente era astuta, más que todos los animales del campo que Jehová Dios había hecho; la cual dijo a la mujer: ¿Conque Dios os ha dicho: No comáis de todo árbol del huerto?                                       </p>'+
+'<p>2 Y la mujer respondió a la serpiente: Del fruto de los árboles del huerto podemos comer;                                                                                                                                       </p>'+
+'<p>3 pero del fruto del árbol que está en medio del huerto dijo Dios: No comeréis de él, ni le tocaréis, para que no muráis.                                                                                                       </p>'+
+'<p>4 Entonces la serpiente dijo a la mujer: No moriréis;                                                                                                                                                                           </p>'+
+'<p>5 sino que sabe Dios que el día que comáis de él, serán abiertos vuestros ojos, y seréis como Dios, sabiendo el bien y el mal.                                                                                                  </p>'+
+'<p>6 Y vio la mujer que el árbol era bueno para comer, y que era agradable a los ojos, y árbol codiciable para alcanzar la sabiduría; y tomó de su fruto, y comió; y dio también a su marido, el cual comió así como ella.         </p>'+
+'<p>7 Entonces fueron abiertos los ojos de ambos, y conocieron que estaban desnudos; entonces cosieron hojas de higuera, y se hicieron delantales.                                                                                  </p>'+
+'<p>8 Y oyeron la voz de Jehová Dios que se paseaba en el huerto, al aire del día; y el hombre y su mujer se escondieron de la presencia de Jehová Dios entre los árboles del huerto.                                               </p>'+
+'<p>9 Mas Jehová Dios llamó al hombre, y le dijo: ¿Dónde estás tú?                                                                                                                                                                  </p>'+
+'<p>10 Y él respondió: Oí tu voz en el huerto, y tuve miedo, porque estaba desnudo; y me escondí.                                                                                                                                   </p>'+
+'<p>11 Y Dios le dijo: ¿Quién te enseñó que estabas desnudo? ¿Has comido del árbol de que yo te mandé no comieses?                                                                                                                  </p>'+
+'<p>12 Y el hombre respondió: La mujer que me diste por compañera me dio del árbol, y yo comí.                                                                                                                                      </p>'+
+'<p>13 Entonces Jehová Dios dijo a la mujer: ¿Qué es lo que has hecho? Y dijo la mujer: La serpiente me engañó, y comí.                                                                                                             </p>'+
+'<p>14 Y Jehová Dios dijo a la serpiente: Por cuanto esto hiciste, maldita serás entre todas las bestias y entre todos los animales del campo; sobre tu pecho andarás, y polvo comerás todos los días de tu vida.                   </p>'+
+'<p>15 Y pondré enemistad entre ti y la mujer, y entre tu simiente y la simiente suya; ésta te herirá en la cabeza, y tú le herirás en el calcañar.                                                                                 </p>'+
+'<p>16 A la mujer dijo: Multiplicaré en gran manera los dolores en tus preñeces; con dolor darás a luz los hijos; y tu deseo será para tu marido,[a] y él se enseñoreará de ti.                                                     </p>'+
+'<p>17 Y al hombre dijo: Por cuanto obedeciste a la voz de tu mujer, y comiste del árbol de que te mandé diciendo: No comerás de él; maldita será la tierra por tu causa; con dolor comerás de ella todos los días de tu vida.      </p>'+
+'<p>18 Espinos y cardos te producirá, y comerás plantas del campo.                                                                                                                                                                  </p>'+
+'<p>19 Con el sudor de tu rostro comerás el pan hasta que vuelvas a la tierra, porque de ella fuiste tomado; pues polvo eres, y al polvo volverás.                                                                                  </p>'+
+'<p>20 Y llamó Adán el nombre de su mujer, Eva,[b] por cuanto ella era madre de todos los vivientes.                                                                                                                                </p>'+
+'<p>21 Y Jehová Dios hizo al hombre y a su mujer túnicas de pieles, y los vistió.                                                                                                                                                   </p>'+
+'<p>22 Y dijo Jehová Dios: He aquí el hombre es como uno de nosotros, sabiendo el bien y el mal; ahora, pues, que no alargue su mano, y tome también del árbol de la vida, y coma, y viva para siempre.                             </p>'+
+'<p>23 Y lo sacó Jehová del huerto del Edén, para que labrase la tierra de que fue tomado.                                                                                                                                          </p>'+
+'<p>24 Echó, pues, fuera al hombre, y puso al oriente del huerto de Edén querubines, y una espada encendida que se revolvía por todos lados, para guardar el camino del árbol de la vida.                                           </p>';
+          }
+
+          if(_capitulo == 4){
+            return '<h4>Caín y Abel                                                                                                                                                                            </h4>'+
+'<p>1  Conoció Adán a su mujer Eva, la cual concibió y dio a luz a Caín, y dijo: Por voluntad de Jehová he adquirido[a] varón.                                                             </p>'+
+'<p>2 Después dio a luz a su hermano Abel. Y Abel fue pastor de ovejas, y Caín fue labrador de la tierra.                                                                                  </p>'+
+'<p>3 Y aconteció andando el tiempo, que Caín trajo del fruto de la tierra una ofrenda a Jehová.                                                                                           </p>'+
+'<p>4 Y Abel trajo también de los primogénitos de sus ovejas, de lo más gordo de ellas. Y miró Jehová con agrado a Abel y a su ofrenda;                                                    </p>'+
+'<p>5 pero no miró con agrado a Caín y a la ofrenda suya. Y se ensañó Caín en gran manera, y decayó su semblante.                                                                          </p>'+
+'<p>6 Entonces Jehová dijo a Caín: ¿Por qué te has ensañado, y por qué ha decaído tu semblante?                                                                                            </p>'+
+'<p>7 Si bien hicieres, ¿no serás enaltecido? y si no hicieres bien, el pecado está a la puerta; con todo esto, a ti será su deseo, y tú te enseñorearás de él.[b]                         </p>'+
+'<p>8 Y dijo Caín a su hermano Abel: Salgamos al campo. Y aconteció que estando ellos en el campo, Caín se levantó contra su hermano Abel, y lo mató.                                      </p>'+
+'<p>9 Y Jehová dijo a Caín: ¿Dónde está Abel tu hermano? Y él respondió: No sé. ¿Soy yo acaso guarda de mi hermano?                                                                        </p>'+
+'<p>10 Y él le dijo: ¿Qué has hecho? La voz de la sangre de tu hermano clama a mí desde la tierra.                                                                                         </p>'+
+'<p>11 Ahora, pues, maldito seas tú de la tierra, que abrió su boca para recibir de tu mano la sangre de tu hermano.                                                                       </p>'+
+'<p>12 Cuando labres la tierra, no te volverá a dar su fuerza; errante y extranjero serás en la tierra.                                                                                    </p>'+
+'<p>13 Y dijo Caín a Jehová: Grande es mi castigo para ser soportado.                                                                                                                      </p>'+
+'<p>14 He aquí me echas hoy de la tierra, y de tu presencia me esconderé, y seré errante y extranjero en la tierra; y sucederá que cualquiera que me hallare, me matará.                   </p>'+
+'<p>15 Y le respondió Jehová: Ciertamente cualquiera que matare a Caín, siete veces será castigado. Entonces Jehová puso señal en Caín, para que no lo matase cualquiera que le hallara.   </p>'+
+'<p>16 Salió, pues, Caín de delante de Jehová, y habitó en tierra de Nod,[c] al oriente de Edén.                                                                                           </p>'+
+'<p>17 Y conoció Caín a su mujer, la cual concibió y dio a luz a Enoc; y edificó una ciudad, y llamó el nombre de la ciudad del nombre de su hijo, Enoc.                                   </p>'+
+'<p>18 Y a Enoc le nació Irad, e Irad engendró a Mehujael, y Mehujael engendró a Metusael, y Metusael engendró a Lamec.                                                                    </p>'+
+'<p>19 Y Lamec tomó para sí dos mujeres; el nombre de la una fue Ada, y el nombre de la otra, Zila.                                                                                        </p>'+
+'<p>20 Y Ada dio a luz a Jabal, el cual fue padre de los que habitan en tiendas y crían ganados.                                                                                           </p>'+
+'<p>21 Y el nombre de su hermano fue Jubal, el cual fue padre de todos los que tocan arpa y flauta.                                                                                        </p>'+
+'<p>22 Y Zila también dio a luz a Tubal-caín, artífice de toda obra de bronce y de hierro; y la hermana de Tubal-caín fue Naama.                                                           </p>'+
+'<p>23 Y dijo Lamec a sus mujeres: Ada y Zila, oíd mi voz; Mujeres de Lamec, escuchad mi dicho: Que un varón mataré por mi herida, Y un joven por mi golpe.                                </p>'+
+'<p>24 Si siete veces será vengado Caín, Lamec en verdad setenta veces siete lo será.                                                                                                      </p>'+
+'<p>25 Y conoció de nuevo Adán a su mujer, la cual dio a luz un hijo, y llamó su nombre Set:[d] Porque Dios (dijo ella) me ha sustituido otro hijo en lugar de Abel, a quien mató Caín.    </p>'+
+'<p>26 Y a Set también le nació un hijo, y llamó su nombre Enós. Entonces los hombres comenzaron a invocar el nombre de Jehová.                                                            </p>';
+          }
+          if(_capitulo == 5){
+            return '<h4>Los descendientes de Adán                                                                                                                                  '+
+'<p>(1 Cr. 1.1-4)                                                                                                                                              </p></h4>'+
+'<p>1  Este es el libro de las generaciones de Adán. El día en que creó Dios al hombre, a semejanza de Dios lo hizo.                                           </p>'+
+'<p>2 Varón y hembra los creó; y los bendijo, y llamó el nombre de ellos Adán, el día en que fueron creados.                                                   </p>'+
+'<p>3 Y vivió Adán ciento treinta años, y engendró un hijo a su semejanza, conforme a su imagen, y llamó su nombre Set.                                        </p>'+
+'<p>4 Y fueron los días de Adán después que engendró a Set, ochocientos años, y engendró hijos e hijas.                                                        </p>'+
+'<p>5 Y fueron todos los días que vivió Adán novecientos treinta años; y murió.                                                                                </p>'+
+'<p>6 Vivió Set ciento cinco años, y engendró a Enós.                                                                                                          </p>'+
+'<p>7 Y vivió Set, después que engendró a Enós, ochocientos siete años, y engendró hijos e hijas.                                                              </p>'+
+'<p>8 Y fueron todos los días de Set novecientos doce años; y murió.                                                                                           </p>'+
+'<p>9 Vivió Enós noventa años, y engendró a Cainán.                                                                                                            </p>'+
+'<p>10 Y vivió Enós, después que engendró a Cainán, ochocientos quince años, y engendró hijos e hijas.                                                         </p>'+
+'<p>11 Y fueron todos los días de Enós novecientos cinco años; y murió.                                                                                        </p>'+
+'<p>12 Vivió Cainán setenta años, y engendró a Mahalaleel.                                                                                                     </p>'+
+'<p>13 Y vivió Cainán, después que engendró a Mahalaleel, ochocientos cuarenta años, y engendró hijos e hijas.                                                 </p>'+
+'<p>14 Y fueron todos los días de Cainán novecientos diez años; y murió.                                                                                       </p>'+
+'<p>15 Vivió Mahalaleel sesenta y cinco años, y engendró a Jared.                                                                                              </p>'+
+'<p>16 Y vivió Mahalaleel, después que engendró a Jared, ochocientos treinta años, y engendró hijos e hijas.                                                   </p>'+
+'<p>17 Y fueron todos los días de Mahalaleel ochocientos noventa y cinco años; y murió.                                                                        </p>'+
+'<p>18 Vivió Jared ciento sesenta y dos años, y engendró a Enoc.                                                                                               </p>'+
+'<p>19 Y vivió Jared, después que engendró a Enoc, ochocientos años, y engendró hijos e hijas.                                                                 </p>'+
+'<p>20 Y fueron todos los días de Jared novecientos sesenta y dos años; y murió.                                                                               </p>'+
+'<p>21 Vivió Enoc sesenta y cinco años, y engendró a Matusalén.                                                                                                </p>'+
+'<p>22 Y caminó Enoc con Dios, después que engendró a Matusalén, trescientos años, y engendró hijos e hijas.                                                   </p>'+
+'<p>23 Y fueron todos los días de Enoc trescientos sesenta y cinco años.                                                                                       </p>'+
+'<p>24 Caminó, pues, Enoc con Dios, y desapareció, porque le llevó Dios.                                                                                       </p>'+
+'<p>25 Vivió Matusalén ciento ochenta y siete años, y engendró a Lamec.                                                                                        </p>'+
+'<p>26 Y vivió Matusalén, después que engendró a Lamec, setecientos ochenta y dos años, y engendró hijos e hijas.                                              </p>'+
+'<p>27 Fueron, pues, todos los días de Matusalén novecientos sesenta y nueve años; y murió.                                                                    </p>'+
+'<p>28 Vivió Lamec ciento ochenta y dos años, y engendró un hijo;                                                                                              </p>'+
+'<p>29 y llamó su nombre Noé,[a] diciendo: Este nos aliviará de nuestras obras y del trabajo de nuestras manos, a causa de la tierra que Jehová maldijo.       </p>'+
+'<p>30 Y vivió Lamec, después que engendró a Noé, quinientos noventa y cinco años, y engendró hijos e hijas.                                                   </p>'+
+'<p>31 Y fueron todos los días de Lamec setecientos setenta y siete años; y murió.                                                                             </p>'+
+'<p>32 Y siendo Noé de quinientos años, engendró a Sem, a Cam y a Jafet.                                                                                       </p>';
+          }
+          if(_capitulo == 6){
+            return 
+          }
+          if(_capitulo == 7){
+            return 
+          }
+          if(_capitulo == 8){
+            return 
+          }
+          if(_capitulo == 9){
+            return 
+          }
+          if(_capitulo == 10){
+            return 
+          }
+          if(_capitulo == 11){
+            return 
+          }
+          if(_capitulo == 12){
+            return 
+          }
+          if(_capitulo == 13){
+            return 
+          }
+          if(_capitulo == 14){
+            return 
+          }
+          if(_capitulo == 15){
+            return 
+          }
+          if(_capitulo == 16){
+            return 
+          }
+          if(_capitulo == 17){
+            return 
+          }
+          if(_capitulo == 18){
+            return 
+          }
+          if(_capitulo == 19){
+            return 
+          }
+          if(_capitulo == 20){
+            return 
+          }
+
+
+
+
+        //#endregion
+      }
+    }
 
     document.addEventListener('DOMContentLoaded', function () {
 
