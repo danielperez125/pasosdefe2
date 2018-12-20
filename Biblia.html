@@ -139,7 +139,8 @@
               style="cursor:pointer">
                 <h3>Levítico</h3>
               </li>
-              <li noLibro="4" cantCap="36" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
+              <li noLibro="4" cantCap="36" onclick="PintarCapitulos(this)" class="list-group-item list-group-item-action list-group-item-warning" 
+              style="cursor:pointer">
                 <h3>Números</h3>
               </li>
               <li noLibro="5" cantCap="34" class="list-group-item list-group-item-action list-group-item-warning" style="cursor:pointer">
@@ -555,6 +556,7 @@
 
     var _glbOrigenColaps = false;
     var _glbLibroActivo = 0;
+    var _glbDimensionesPant = window.screen.availWidth;
 
     function AbrirTestamento(_this) {
       var elemento = $(_this)[0].id;
@@ -571,7 +573,7 @@
     function PintarCapitulos(_this) {
       var numLibro = $(_this).attr('noLibro');
       var cantCap = $(_this).attr('cantCap');
-
+      
       if (!_glbOrigenColaps){
 
         if($("[Parametro='CapitulosBiblia']").length == 0 || _glbLibroActivo != parseInt(numLibro) ) {
@@ -587,18 +589,36 @@
 
           $(_this).removeClass();
           $(_this).addClass('list-group-item list-group-item list-group-item-warning');
+                            
 
           $(_this).find('h3').append('<i Parametro="OcultarColaps" class="fa fa-minus-circle" aria-hidden="true" onclick="ColapsarCapitulo(this)" style="margin-left: 67%;"></i>');
 
-          for (x = 1; x <= cantCap; x++) {
+           for (x = 1; x <= cantCap; x++) {
             var ul = $('<ul/>');
 
             ul.append('<li Parametro="CapitulosBiblia" class="list-group-item list-group-item-action list-group-item-warning" cap="' + x + 
-                      '" cantVer="' + ObtenerVersiculo(numLibro, x) + '" onclick="PintarVerisulos(this)"><h5 style="color: #856404">' + x + '. ' +
+                      '" cantVer="' + 0 /*ObtenerVersiculo(numLibro, x)*/ + '" onclick="PintarVerisulos(this)"><h5 style="color: #856404">' + 
+                        x + '. ' +
                       ObtenerTituloCap(x,numLibro) +
                     '</h5></li>');
 
-            $("[noLibro='" + numLibro + "']").append(ul);
+           $("[noLibro='" + numLibro + "']").append(ul);
+
+
+
+     // var ul = $('<ul class="nav nav-pills" >');
+
+      // for (y = 1; y <= cantVer; y++) {
+
+      //   ul.append('<li Parametro="gn_' + cap + '" class="nav-link active" style="color:#856404">' +
+      //     ((y < 10) ? '0' + y : y) + '</li>&nbsp;');
+      // }
+
+      // $('#' + tituloDiv).append(ul);
+      // $('#' + tituloDiv).append('<br>');
+
+
+
           }
         }
       }else{
@@ -644,7 +664,7 @@
       $(_this).addClass('list-group-item list-group-item-action list-group-item-active');
       $(_this).append($('<div OcultarLibro="Amen" id="' + tituloDiv + '">'));
 
-      // var ul = $('<ul/>');
+      // var ul = $('<ul class="nav nav-pills" >');
 
       // for (y = 1; y <= cantVer; y++) {
 
@@ -654,10 +674,8 @@
 
       // $('#' + tituloDiv).append(ul);
       // $('#' + tituloDiv).append('<br>');
-      // $("[Parametro=gn_" + cap + "]").parent().addClass('nav nav-pills');
 
       //ValidarLibrosAbiertos(tituloDiv);
-      window.stop();
     }
 
     function ObtenerVersiculo(_libro, _capitulo) {
@@ -790,7 +808,49 @@
           else if (_capitulo == 26) { return 46;}
           else if (_capitulo == 27) { return 34;}
         //#endregion
-          else {
+        
+        //#region Números
+        case '4':
+               if (_capitulo == 1) { return 54;}
+          else if (_capitulo == 2 ) { return 34;}
+          else if (_capitulo == 3 ) { return 51;}
+          else if (_capitulo == 4 ) { return 49;}
+          else if (_capitulo == 5 ) { return 31;}
+          else if (_capitulo == 6 ) { return 27;}
+          else if (_capitulo == 7 ) { return 89;}
+          else if (_capitulo == 8 ) { return 26;}
+          else if (_capitulo == 9 ) { return 23;}
+          else if (_capitulo == 10) { return 36;}
+          else if (_capitulo == 11) { return 35;}
+          else if (_capitulo == 12) { return 16;}
+          else if (_capitulo == 13) { return 33;}
+          else if (_capitulo == 14) { return 45;}
+          else if (_capitulo == 15) { return 41;}
+          else if (_capitulo == 16) { return 50;}
+          else if (_capitulo == 17) { return 13;}
+          else if (_capitulo == 18) { return 32;}
+          else if (_capitulo == 19) { return 22;}
+          else if (_capitulo == 20) { return 29;}
+          else if (_capitulo == 21) { return 35;}
+          else if (_capitulo == 22) { return 41;}
+          else if (_capitulo == 23) { return 30;}
+          else if (_capitulo == 24) { return 25;}
+          else if (_capitulo == 25) { return 18;}
+          else if (_capitulo == 26) { return 65;}
+          else if (_capitulo == 27) { return 23;}
+          else if (_capitulo == 28) { return 31;}
+          else if (_capitulo == 29) { return 40;}
+          else if (_capitulo == 30) { return 16;}
+          else if (_capitulo == 31) { return 54;}
+          else if (_capitulo == 32) { return 42;}
+          else if (_capitulo == 33) { return 56;}
+          else if (_capitulo == 34) { return 29;}
+          else if (_capitulo == 35) { return 34;}
+          else if (_capitulo == 36) { return 13;}
+
+
+        //#endregion
+        else {
             return 0;
           }
           break;
@@ -813,120 +873,120 @@
           else if (_numCap == 9) { return 'Pacto de Dios con Noé'; }
           else if (_numCap == 10) { return 'Los descendientes de los hijos de Noé'; }
           else if (_numCap == 11) { return 'La torre de Babel'; }
-          else if (_numCap == 12) { return 20; }
-          else if (_numCap == 13) { return 18; }
-          else if (_numCap == 14) { return 24; } 
-          else if (_numCap == 15) { return 21;}
-          else if (_numCap == 16) { return 16;} 
-          else if (_numCap == 17) { return 27;} 
-          else if (_numCap == 18) { return 33;} 
-          else if (_numCap == 19) { return 38;} 
-          else if (_numCap == 20) { return 18;} 
-          else if (_numCap == 21) { return 34;} 
-          else if (_numCap == 22) { return 24;} 
-          else if (_numCap == 23) { return 20;} 
-          else if (_numCap == 24) { return 67;} 
-          else if (_numCap == 25) { return 34;} 
-          else if (_numCap == 26) { return 35;} 
-          else if (_numCap == 27) { return 46;}
-          else if (_numCap == 28) { return 46;}
-          else if (_numCap == 29) { return 22;}
-          else if (_numCap == 30) { return 35;}
-          else if (_numCap == 31) { return 43;}
-          else if (_numCap == 32) { return 55;}
-          else if (_numCap == 33) { return 32;}
-          else if (_numCap == 34) { return 20;}
-          else if (_numCap == 35) { return 31;}
-          else if (_numCap == 36) { return 29;}
-          else if (_numCap == 37) { return 43;}
-          else if (_numCap == 38) { return 36;}
-          else if (_numCap == 39) { return 30;}
-          else if (_numCap == 40) { return 23;}
-          else if (_numCap == 41) { return 57;}
-          else if (_numCap == 42) { return 38;}
-          else if (_numCap == 43) { return 34;}
-          else if (_numCap == 44) { return 34;}
-          else if (_numCap == 45) { return 28;}
-          else if (_numCap == 46) { return 34;}
-          else if (_numCap == 47) { return 31;}
-          else if (_numCap == 48) { return 22;}
-          else if (_numCap == 49) { return 33;}
-          else if (_numCap == 50) { return 26;}
+          else if (_numCap == 12) { return 'Dios llama a Abram'; }
+          else if (_numCap == 13) { return 'Abram y Lot se separan'; }
+          else if (_numCap == 14) { return 'Abram liberta a Lot'; } 
+          else if (_numCap == 15) { return 'Dios promete a Abram un hijo';}
+          else if (_numCap == 16) { return 'Agar e Ismael';} 
+          else if (_numCap == 17) { return 'La circuncisión, señal del pacto';} 
+          else if (_numCap == 18) { return 'Promesa del nacimiento de Isaac';} 
+          else if (_numCap == 19) { return 'Destrucción de Sodoma y Gomorra';} 
+          else if (_numCap == 20) { return 'Abraham y Abimelec';} 
+          else if (_numCap == 21) { return 'Nacimiento de Isaac';} 
+          else if (_numCap == 22) { return 'Dios ordena a Abraham que sacrifique a Isaac';} 
+          else if (_numCap == 23) { return 'Muerte y sepultura de Sara';} 
+          else if (_numCap == 24) { return 'Abraham busca esposa para Isaac';} 
+          else if (_numCap == 25) { return 'Los descendientes de Abraham y Cetura';} 
+          else if (_numCap == 26) { return 'Isaac en Gerar';} 
+          else if (_numCap == 27) { return 'Jacob obtiene la bendición de Isaac';}
+          else if (_numCap == 28) { return 'Dios se aparece a Jacob en Bet-el';}
+          else if (_numCap == 29) { return 'Jacob sirve a Labán por Raquel y Lea';}
+          else if (_numCap == 30) { return 'Tretas de Jacob y de Labán';}
+          else if (_numCap == 31) { return 'Jacob huye de Labán';}
+          else if (_numCap == 32) { return 'Jacob se prepara para el encuentro con Esaú';}
+          else if (_numCap == 33) { return 'Reconciliación entre Jacob y Esaú';}
+          else if (_numCap == 34) { return 'La deshonra de Dina vengada';}
+          else if (_numCap == 35) { return 'Dios bendice a Jacob en Bet-el';}
+          else if (_numCap == 36) { return 'Los descendientes de Esaú';}
+          else if (_numCap == 37) { return 'José es vendido por sus hermanos';}
+          else if (_numCap == 38) { return 'Judá y Tamar';}
+          else if (_numCap == 39) { return 'José y la esposa de Potifar';}
+          else if (_numCap == 40) { return 'José interpreta dos sueños';}
+          else if (_numCap == 41) { return 'José interpreta el sueño de Faraón';}
+          else if (_numCap == 42) { return 'Los hermanos de José vienen por alimentos';}
+          else if (_numCap == 43) { return 'Los hermanos de José regresan con Benjamín';}
+          else if (_numCap == 44) { return 'La copa de José';}
+          else if (_numCap == 45) { return 'José se da a conocer a sus hermanos';}
+          else if (_numCap == 46) { return 'Jacob y su familia en Egipto';}
+          else if (_numCap == 47) { return '<...> Jacob y su familia en Egipto';}
+          else if (_numCap == 48) { return 'Jacob bendice a Efraín y a Manasés';}
+          else if (_numCap == 49) { return 'Profecía de Jacob acerca de sus hijos';}
+          else if (_numCap == 50) { return 'Muerte de José';}
         //#endregion
         
         //#region Éxodo
         case '2':
-               if (_numCap == 1) { return 'La Creación'; }
-          else if (_numCap == 2) { return 'El hombre en el huerto del Edén'; }
-          else if (_numCap == 3) { return 'Desobediencia del hombre'; }
-          else if (_numCap == 4) { return 'Caín y Abel'; }
-          else if (_numCap == 5) { return 'Los descendientes de Adán'; }
-          else if (_numCap == 6) { return 'La maldad de los hombres'; }
-          else if (_numCap == 7) { return 'El diluvio'; }
-          else if (_numCap == 8) { return '<...>El diluvio'; }
-          else if (_numCap == 9) { return 'Pacto de Dios con Noé'; }
-          else if (_numCap == 10) { return 'Los descendientes de los hijos de Noé'; }
-          else if (_numCap == 11) { return 'La torre de Babel'; }
-          else if (_numCap == 12) { return 20; }
-          else if (_numCap == 13) { return 18; }
-          else if (_numCap == 14) { return 24; } 
-          else if (_numCap == 15) { return 21;}
-          else if (_numCap == 16) { return 16;} 
-          else if (_numCap == 17) { return 27;} 
-          else if (_numCap == 18) { return 33;} 
-          else if (_numCap == 19) { return 38;} 
-          else if (_numCap == 20) { return 18;} 
-          else if (_numCap == 21) { return 34;} 
-          else if (_numCap == 22) { return 24;} 
-          else if (_numCap == 23) { return 20;} 
-          else if (_numCap == 24) { return 67;} 
-          else if (_numCap == 25) { return 34;} 
-          else if (_numCap == 26) { return 35;} 
-          else if (_numCap == 27) { return 46;}
-          else if (_numCap == 28) { return 46;}
-          else if (_numCap == 29) { return 22;}
-          else if (_numCap == 30) { return 35;}
-          else if (_numCap == 31) { return 43;}
-          else if (_numCap == 32) { return 55;}
-          else if (_numCap == 33) { return 32;}
-          else if (_numCap == 34) { return 20;}
-          else if (_numCap == 35) { return 31;}
-          else if (_numCap == 36) { return 29;}
-          else if (_numCap == 37) { return 43;}
-          else if (_numCap == 38) { return 36;}
-          else if (_numCap == 39) { return 30;}
-          else if (_numCap == 40) { return 23;}
+               if (_numCap == 1) { return 'Aflicción de los israelitas en Egipto'; }
+          else if (_numCap == 2) { return 'Nacimiento de Moisés'; }
+          else if (_numCap == 3) { return 'Llamamiento de Moisés'; }
+          else if (_numCap == 4) { return 'Moisés vuelve a Egipto'; }
+          else if (_numCap == 5) { return 'Moisés y Aarón ante Faraón'; }
+          else if (_numCap == 6) { return '<...>Moisés y Aarón ante Faraón'; }
+          else if (_numCap == 7) { return 'La vara de Aarón'; }
+          else if (_numCap == 8) { return 'La plaga de ranas'; }
+          else if (_numCap == 9) { return 'La plaga en el ganado'; }
+          else if (_numCap == 10) { return 'La plaga de langostas'; }
+          else if (_numCap == 11) { return 'Anunciada la muerte de los primogénitos'; }
+          else if (_numCap == 12) { return 'La Pascua'; }
+          else if (_numCap == 13) { return 'Consagración de los primogénitos'; }
+          else if (_numCap == 14) { return 'Los israelitas cruzan el Mar Rojo'; } 
+          else if (_numCap == 15) { return 'Cántico de Moisés y de María';}
+          else if (_numCap == 16) { return 'Dios da el maná';} 
+          else if (_numCap == 17) { return 'Agua de la roca';} 
+          else if (_numCap == 18) { return 'Jetro visita a Moisés';} 
+          else if (_numCap == 19) { return 'Israel en Sinaí';} 
+          else if (_numCap == 20) { return 'Los Diez Mandamientos';} 
+          else if (_numCap == 21) { return 'Leyes sobre los esclavos';} 
+          else if (_numCap == 22) { return 'Leyes sobre la restitución';} 
+          else if (_numCap == 23) { return 'Las tres fiestas anuales';} 
+          else if (_numCap == 24) { return 'Moisés y los ancianos en el Monte Sinaí';} 
+          else if (_numCap == 25) { return 'La ofrenda para el tabernáculo';} 
+          else if (_numCap == 26) { return 'El tabernáculo';} 
+          else if (_numCap == 27) { return 'El altar de bronce';}
+          else if (_numCap == 28) { return 'Las vestiduras de los sacerdotes';}
+          else if (_numCap == 29) { return 'Consagración de Aarón y de sus hijos';}
+          else if (_numCap == 30) { return 'El altar del incienso';}
+          else if (_numCap == 31) { return 'Llamamiento de Bezaleel y de Aholiab';}
+          else if (_numCap == 32) { return '<...>Llamamiento de Bezaleel y de Aholiab';}
+          else if (_numCap == 33) { return 'La presencia de Dios prometida';}
+          else if (_numCap == 34) { return 'El pacto renovado';}
+          else if (_numCap == 35) { return 'Reglamento del día de reposo';}
+          else if (_numCap == 36) { return 'Moisés suspende la ofrenda del pueblo';}
+          else if (_numCap == 37) { return 'Mobiliario del tabernáculo';}
+          else if (_numCap == 38) { return 'El atrio del tabernáculo';}
+          else if (_numCap == 39) { return 'Hechura de las vestiduras de los sacerdotes';}
+          else if (_numCap == 40) { return 'Moisés erige el tabernáculo';}
         //#endregion
         
         //#region Levítico
         case '3':
-               if (_numCap == 1) { return 'La Creación'; }
-          else if (_numCap == 2) { return 'El hombre en el huerto del Edén'; }
-          else if (_numCap == 3) { return 'Desobediencia del hombre'; }
-          else if (_numCap == 4) { return 'Caín y Abel'; }
-          else if (_numCap == 5) { return 'Los descendientes de Adán'; }
-          else if (_numCap == 6) { return 'La maldad de los hombres'; }
-          else if (_numCap == 7) { return 'El diluvio'; }
-          else if (_numCap == 8) { return '<...>El diluvio'; }
-          else if (_numCap == 9) { return 'Pacto de Dios con Noé'; }
-          else if (_numCap == 10) { return 'Los descendientes de los hijos de Noé'; }
-          else if (_numCap == 11) { return 'La torre de Babel'; }
-          else if (_numCap == 12) { return 20; }
-          else if (_numCap == 13) { return 18; }
-          else if (_numCap == 14) { return 24; } 
-          else if (_numCap == 15) { return 21;}
-          else if (_numCap == 16) { return 16;} 
-          else if (_numCap == 17) { return 27;} 
-          else if (_numCap == 18) { return 33;} 
-          else if (_numCap == 19) { return 38;} 
-          else if (_numCap == 20) { return 18;} 
-          else if (_numCap == 21) { return 34;} 
-          else if (_numCap == 22) { return 24;} 
-          else if (_numCap == 23) { return 20;} 
-          else if (_numCap == 24) { return 67;} 
-          else if (_numCap == 25) { return 34;} 
-          else if (_numCap == 26) { return 35;} 
-          else if (_numCap == 27) { return 46;}
+               if (_numCap == 1) { return 'Los holocaustos'; }
+          else if (_numCap == 2) { return 'Las ofrendas'; }
+          else if (_numCap == 3) { return 'Ofrendas de paz'; }
+          else if (_numCap == 4) { return 'Ofrendas por el pecado'; }
+          else if (_numCap == 5) { return 'Ofrendas expiatorias'; }
+          else if (_numCap == 6) { return 'Leyes de los sacrificios'; }
+          else if (_numCap == 7) { return '<...>Leyes de los sacrificios'; }
+          else if (_numCap == 8) { return 'Consagración de Aarón y de sus hijos'; }
+          else if (_numCap == 9) { return 'Los sacrificios de Aarón'; }
+          else if (_numCap == 10) { return 'El pecado de Nadab y Abiú'; }
+          else if (_numCap == 11) { return 'Animales limpios e inmundos'; }
+          else if (_numCap == 12) { return 'La purificación de la mujer después del parto'; }
+          else if (_numCap == 13) { return 'Leyes acerca de la lepra'; }
+          else if (_numCap == 14) { return '<...>Leyes acerca de la lepra'; } 
+          else if (_numCap == 15) { return 'Impurezas físicas';}
+          else if (_numCap == 16) { return 'El día de la expiación';} 
+          else if (_numCap == 17) { return 'El santuario único';} 
+          else if (_numCap == 18) { return 'Actos de inmoralidad prohibidos';} 
+          else if (_numCap == 19) { return 'Leyes de santidad y de justicia';} 
+          else if (_numCap == 20) { return 'Penas por actos de inmoralidad';} 
+          else if (_numCap == 21) { return 'Santidad de los sacerdotes';} 
+          else if (_numCap == 22) { return 'Santidad de las ofrendas';} 
+          else if (_numCap == 23) { return 'Las fiestas solemnes';} 
+          else if (_numCap == 24) { return 'Aceite para las lámparas';} 
+          else if (_numCap == 25) { return 'El año de reposo de la tierra y el año del jubileo';} 
+          else if (_numCap == 26) { return 'Bendiciones de la obediencia';} 
+          else if (_numCap == 27) { return 'Cosas consagradas a Dios';}
         //#endregion
         else {
             return 0;
